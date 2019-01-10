@@ -1,0 +1,79 @@
+.visible-md,
+.visible-sm,
+.visible-xs {
+	display: none;
+}
+
+.center {
+
+	width: 1170px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+@media ($mdWidth) {
+
+	.hidden-md {
+
+		display: none !important;
+
+	}
+
+	.visible-md {
+
+		display: block;
+
+	}
+
+	.center {
+
+		width: 768px;
+
+	}
+
+	.md-joint {
+
+		margin-left: calc(var(--borderPage) * -1);
+		margin-right: calc(var(--borderPage) * -1);
+		width: auto;
+		max-width: none;
+		padding-left: var(--borderPage);
+		padding-right: var(--borderPage);
+
+	}
+
+}
+
+@media ($smWidth) {
+
+	.hidden-sm {
+
+		display: none !important;
+
+	}
+
+	.visible-sm {
+
+		display: block;
+
+	}
+
+}
+
+@media ($xsWidth) {
+
+	.hidden-xs {
+
+		display: none !important;
+
+	}
+
+	.visible-xs {
+
+		display: block;
+
+	}
+
+}

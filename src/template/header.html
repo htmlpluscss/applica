@@ -1,0 +1,270 @@
+	<header class="header{% if headerMod %} header--{{ headerMod }}{% endif %}">
+
+		<div class="center">
+
+			<div class="header__top">
+
+				<a class="header__logo" href="/">
+					Центрофинанс
+				</a>
+
+				<div class="header__geo">
+
+					<button type="button" class="header__geo-current header__link header__link--geo button" data-alert-up="geo">
+						Город не выбран
+					</button>
+
+<!--
+если есть кука BITRIX_SM_geo
+то блок .header__geo-confirm не выводить
+-->
+
+					<div class="header__geo-confirm">
+
+						<p>
+							Информация будет отображается для вашего региона:
+							<b class="header__geo-confirm-name">Северодвинск</b>
+						</p>
+
+						<div class="header__geo-confirm-btns">
+
+							<button type="button" class="btn btn--medium header__geo-confirm-true">Всё верно</button>
+
+							<button type="button" class="btn btn--medium btn--link" data-modal="geo">Выбрать другой</button>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="header__links">
+
+					<div class="header__links-item">
+
+						<a href="/adresa-ofisov/" class="header__link header__link--office">
+							Адреса офисов
+						</a>
+
+					</div>
+
+					<div class="header__links-item">
+
+						<button type="button" class="header__link header__link--support button" data-alert-up="help">
+							Помощь
+						</button>
+
+					</div>
+
+				</div>
+
+				<button type="button" class="header__btn-lk header__btn-lk--unlock btn btn--big" data-mobile="Войти">
+					Личный кабинет
+				</button>
+
+				<button class="button header__btn-menu-toggle visible-md" type="button">
+					<span>открыть/закрыть меню сайта</span>
+				</button>
+
+			</div>
+
+			<hr>
+
+			<div class="header__nav">
+
+				<form class="header__search" action="/" autocomplete="off">
+
+					<input class="header__search-input input" placeholder="Поиск по сайту">
+
+					<button type="reset" class="header__search-btn button">Искать</button>
+
+					<div class="header__search-result hide" data-head="результаты поиска">
+
+						<ul>
+							<li>
+								<a href=""><b>Как взя</b>ть займ?</a>
+							</li>
+							<li>
+								<a href=""><b>Как</b> <span>погасить</span> <b>взя</b>тый займ в банке?</a>
+							</li>
+							<li>
+								<a href=""><b>Как взя</b>ть займ?</a>
+							</li>
+							<li>
+								<a href=""><b>Как</b> <span>погасить</span> <b>взя</b>тый займ в банке?</a>
+							</li>
+						</ul>
+
+					</div>
+
+				</form>
+
+				<button type="button" class="header__btn-full-menu button">Всё меню</button>
+
+				<nav class="header__menu">
+
+					<ul class="header__menu-top">
+
+{% set menuTop = [
+	{
+		title: "Займы",
+		link: "products"
+	},
+	{
+		title: "Акции",
+		link: "akcii"
+	},
+	{
+		title: "Новости",
+		link: "novosti"
+	},
+	{
+		title: "Блог",
+		link: "blog"
+	},
+	{
+		title: "Вопросы - ответы",
+		link: "vopros-otvet"
+	},
+	{
+		title: "Вакансии",
+		link: "vakansii"
+	},
+	{
+		title: "Контакты",
+		link: "kontakty"
+	}
+] %}
+
+{% for item in menuTop %}
+
+						<li class="header__menu-top-item">
+							<a class="header__menu-top-link" href="/{{item.link}}.html">{{item.title}}</a>
+						</li>
+
+{% endfor %}
+
+					</ul>
+
+{% set menuFull = [
+	{
+		head: "Кредитные продукты"
+	},
+		{
+			title: "Простой"
+		},
+		{
+			title: "Пенсионный"
+		},
+		{
+			title: "Долгосрочный"
+		},
+		{
+			title: "Онлайн"
+		},
+	{
+		head: "Центрофинанс"
+	},
+		{
+			title: "О компании"
+		},
+		{
+			title: "Документы"
+		},
+		{
+			title: "Вакансии"
+		},
+		{
+			title: "Работа у нас"
+		},
+		{
+			title: "Адреса офисов"
+		},
+		{
+			title: "Контакты"
+		},
+		{
+			title: "Центрофорбс"
+		},
+	{
+		head: "Разделы сайта"
+	},
+		{
+			title: "Акции"
+		},
+		{
+			title: "Новости"
+		},
+		{
+			title: "Блог"
+		},
+		{
+			title: "Вопросы - ответы"
+		},
+		{
+			title: "Правила цитирования"
+		},
+		{
+			title: "Арендодателям"
+		},
+		{
+			title: "Отзывы клиентов"
+		},
+		{
+			title: "Карта сайта"
+		}
+] %}
+
+					<div class="header__menu-full">
+
+{% set menuFullCol = 0 %}
+
+{% for item in menuFull %}
+
+	{% if item.head %}
+
+		{% set menuFullCol = menuFullCol + 1 %}
+
+		{% if loop.first == false %}
+
+							</ul>
+
+						</div>
+
+		{% endif %}
+
+						<div class="header__menu-full-col header__menu-full-col--{{ menuFullCol }}">
+
+							<p class="header__menu-full-head">
+								{{item.head}}
+							</p>
+
+							<ul class="header__menu-full-list">
+
+	{% else %}
+
+								<li class="header__menu-full-item">
+									<a class="header__menu-full-link{% if item.title == 'Центрофорбс' %} header__menu-full-link--target-blank" target="_blank" rel="nofollow{% endif %}" href="/">{{ item.title }}</a>
+								</li>
+
+		{% if loop.last %}
+
+							</ul>
+
+						</div>
+
+		{% endif %}
+
+	{% endif %}
+
+{% endfor %}
+
+					</div>
+
+				</nav>
+
+			</div>
+
+		</div>
+
+	</header>

@@ -1,0 +1,47 @@
+{% set title = "Долгосрочные онлайн займы" %}
+
+{% set description = "Ищите где взять долгосрочный займ? Оформляйте долгосрочный онлайн кредит с ежемесячной оплатой под минимальный процент. Только у нас потребительские кредиты наличными на 6 месяцев!" %}
+
+{% set calculator = "home" %}
+{% set calculatorHead = "Берите займы наличными — получайте призы отличные!" %}
+
+{% set seoBlock = true %}
+{% set hideBreadcrumbs = true %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<div class="calculator-home">
+
+		<div class="calculator-home__img">
+
+			<picture>
+
+				<source srcset="/img/calculator/bg--320@1x.webp 1x, /img/calculator/bg--320@2x.webp 2x" media="(max-width: 320px)" type="image/webp">
+				<source srcset="/img/calculator/bg--360@1x.webp 1x, /img/calculator/bg--360@2x.webp 2x" media="(max-width: 360px)" type="image/webp">
+				<source srcset="/img/calculator/bg--414@1x.webp 1x, /img/calculator/bg--414@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+				<source srcset="/img/calculator/bg--1336@1x.webp 1x, /img/calculator/bg--1336@2x.webp 2x" media="(max-width: 1336px)" type="image/webp">
+				<source srcset="/img/calculator/bg@1x.webp 1x, /img/calculator/bg@2x.webp 2x" type="image/webp">
+
+				<source srcset="/img/calculator/bg--320@1x.jpg 1x, /img/calculator/bg--320@2x.jpg 2x" media="(max-width: 320px)">
+				<source srcset="/img/calculator/bg--360@1x.jpg 1x, /img/calculator/bg--360@2x.jpg 2x" media="(max-width: 360px)">
+				<source srcset="/img/calculator/bg--414@1x.jpg 1x, /img/calculator/bg--414@2x.jpg 2x" media="(max-width: 414px)">
+				<source srcset="/img/calculator/bg--1336@1x.jpg 1x, /img/calculator/bg--1336@2x.jpg 2x" media="(max-width: 1336px)">
+				<source srcset="/img/calculator/bg@1x.jpg 1x, /img/calculator/bg@2x.jpg 2x">
+
+				<img src="/img/calculator/bg@1x.jpg" alt="">
+
+			</picture>
+
+		</div>
+
+{% include "_include/calculator.html" %}
+
+	</div>
+
+	<div class="center">
+home
+	</div>
+
+{% endblock %}

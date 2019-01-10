@@ -1,0 +1,24 @@
+:root {
+
+	--color: #2a3246;
+
+	--red: #ff0142;
+
+	--gray: #ccd1e1;
+
+	--border: #e6e9ef;
+
+	--light: #888792;
+
+	--yellow: #ffee2f;
+
+	--bg: #fbfbfc;
+
+	--borderPage: 5px;
+
+}
+
+$desktop: (min-width: 1200px);
+$mdWidth: (max-width: 1199px);
+$smWidth: (max-width: 767px);
+$xsWidth: (max-width: 359px);

@@ -1,0 +1,41 @@
+.modal {
+
+	flex-grow: 1;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+	display: flex;
+	background-color: #fff;
+
+	&__item {
+
+		position: relative;
+		flex-grow: 1;
+		display: flex;
+
+	}
+
+	&__box {
+
+		display: flex;
+		flex-grow: 1;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+
+	}
+
+	&__close-btn {
+
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		width: 40px;
+		height: 40px;
+		font-size: 0;
+		color: transparent;
+		outline:1px solid red;
+		background: url(/images/sprite.svg) -16px -72px;
+
+	}
+
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>{{ title }}</title>
+
+	<link href="/css/styles.css" rel="preload" as="style">
+	<link href="/js/scripts.js" rel="preload" as="script">
+
+	<link href="/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ description }}">
+
+	<meta property="og:url" content="{{ url }}/{{ urlCurrent }}">
+	<meta property="og:type" content="{{ ogType | default('website') }}">
+	<meta property="og:title" content="{{ title }}">
+	<meta property="og:description" content="{{ description }}">
+
+	<meta property="og:site_name" content="Центрофинанс">
+	<meta property="og:image" content="{{url}}/{{ ogImage236 | default('og-236.png') }}">
+	<meta property="og:image:width" content="236">
+	<meta property="og:image:height" content="236">
+	<meta property="og:image" content="{{url}}/{{ ogImage | default('og.png') }}">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+
+	<link href="/css/styles.css" rel="stylesheet">
+
+</head>
+
+{#
+
+Доступные модификаторы шаблона:
+
+seoBlock (bool) - показать СЕО Блок
+hideBreadcrumbs (bool) - скрыть хлебные крошки (притом микроразметка BreadcrumbList на всех)
+
+#}
+
+<body>
+
+	<script type="application/ld+json">
+
+		[
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Центрофинанс",
+				"url": "{{url}}",
+				"logo": "{{url}}/og.png",
+				"telephone": "8 800 777 37 37",
+				"email": "info@centrofinans.ru",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "г. Северодвинск",
+					"streetAddress": "ул. Карла Маркса, д. 46, офис 303"
+				}
+			},
+			{
+				"@context": "https://schema.org",
+				"@type": "WPHeader",
+				"name": "{{ title }}",
+				"description": "{{ description }}"
+			},
+			{
+				"@context": "https://schema.org",
+				"@type": "BreadcrumbList",
+				"itemListElement":
+				[
+					{
+						"@type": "ListItem",
+						"position": "1",
+						"item":
+						{
+							"@id": "{{ url }}",
+							"name": "Центрофинанс"
+						}
+					}
+				]
+			},
+{% if ogType == "article" %}
+			{
+				"@context": "https://schema.org",
+				"@type": "Article",
+				"name": "{{ title }}",
+				"headline": "{{ headline | truncate(110) }}",
+				"description": "{{ description }}",
+				"author": "Центрофинанс",
+				"publisher": {
+					"@type": "Organization",
+					"name": "Центрофинанс",
+					"url": "{{url}}",
+					"logo": {
+						"@type": "ImageObject",
+						"name": "Центрофинанс",
+						"url": "{{url}}/og.png"
+					}
+				},
+				"dateModified": "2018-10-04",
+				"datePublished": "2018-10-04",
+				"url": "{{ url }}/{{ urlCurrent }}",
+				"mainEntityOfPage": "{{ url }}/{{ urlCurrent }}",
+				"image": "{{url}}/{{ ogImage }}",
+				"aggregateRating": {
+					"@type": "AggregateRating",
+					"ratingValue": "5",
+					"ratingCount": "6"
+				}
+			}
+{% endif %}
+
+		]
+
+	</script>
+
+<div class="wrapper">
+
+{% include "template/header.html" %}
+
+	<main class="main">
+
+{% if seoBlock %}
+
+{% include "template/seo.html" %}
+
+{% endif %}
+
+{% block content %}{% endblock %}
+
+	</main>
+
+{% include "template/footer.html" %}
+
+</div>
+
+{% include "template/modal.html" %}
+
+<script defer src="/js/scripts.js"></script>
+
+</body>
+</html>

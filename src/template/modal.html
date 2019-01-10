@@ -1,0 +1,605 @@
+	<div class="modal hidden-visible">
+
+		<div class="modal__item modal__item--callback hidden-visible">
+
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-loader alert-lk">
+
+			<div class="alert-lk__inner">
+
+				<div class="alert-lk__ico">
+
+					<svg width="44" height="44" viewBox="0 0 44 44">
+						<circle stroke="#ff0142" stroke-dasharray="88 80" stroke-linecap="round" stroke-width="4" fill="none" r="19" cy="22" cx="22">
+							<animateTransform attributeName="transform"
+								attributeType="XML"
+								type="rotate"
+								from="0 22 22"
+								to="360 22 22"
+								dur="10s"
+								repeatCount="indefinite"/>
+						</circle>
+					</svg>
+
+				</div>
+
+				<h3 class="alert_up__title">Добро пожаловать</h3>
+
+				<p class="alert_up__info">Выполняем вход в ваш личный кабинет</p>
+
+			</div>
+
+			<button class="alert_up__close ico ico--close">Закрыть</button>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-not-reg alert-lk">
+
+			<div class="alert-lk__inner">
+
+				<div class="alert-lk__ico">
+
+					<svg width="80" height="80" viewBox="0 0 80 80">
+						<circle cx="40" cy="40" r="38" stroke="#96a0aa" stroke-width="2" fill="none"/>
+						<g transform="translate(-190, -62)">
+							<path d="M242.722532,94.76875 C241.022532,97.99875 237.247532,102.97075 234.087532,106.24975 C230.444532,110.18975 221.856532,115.57775 221.856532,115.57775 C221.193532,115.92575 219.353532,115.95175 218.847532,115.44675 L217.016532,113.62075 C216.638532,112.98875 216.468532,112.25675 217.016532,111.79475 L220.679532,109.05475 C221.299532,108.63575 222.004532,108.55075 222.510532,109.05475 L224.767532,111.30475 C225.298532,110.93175 233.776532,105.37575 238.492532,97.72675 L236.181532,95.42175 C235.675532,94.91775 235.761532,94.21375 236.181532,93.59475 L238.928532,89.94275 C239.434532,89.26775 240.254532,89.43775 240.759532,89.94275 L242.591532,91.76875 C243.309532,92.44275 243.101532,94.01375 242.722532,94.76875 L242.722532,94.76875 L242.722532,94.76875 Z M244.160532,90.46475 L241.282532,87.59475 C240.488532,86.80175 239.199532,86.80175 238.404532,87.59475 L234.087532,93.33475 C233.428532,94.30575 233.293532,95.41175 234.087532,96.20475 L235.849532,97.96175 C234.543532,99.71175 232.975532,101.61975 231.210532,103.37975 C229.214532,105.36975 226.994532,107.17875 224.998532,108.66475 L223.295532,106.96775 C222.501532,106.17475 221.392532,106.30875 220.417532,106.96775 L214.661532,111.27275 C213.696532,111.93775 213.866532,113.34975 214.661532,114.14275 L217.539532,117.01175 C219.129532,118.59775 221.196532,118.08975 223.295532,117.01175 C223.295532,117.01175 229.648532,113.45575 235.087532,108.03175 C240.203532,102.92975 244.160532,96.20475 244.160532,96.20475 C244.985532,93.94175 245.750532,92.04975 244.160532,90.46475 L244.160532,90.46475 L244.160532,90.46475 Z" fill="#FF0142" fill-rule="evenodd"/>
+						</g>
+					</svg>
+
+				</div>
+
+				<h3 class="alert_up__title">Мы незнакомы</h3>
+
+				<div class="mb30">
+
+					<p class="alert_up__info">Личный кабинет доступен только <br>клиентам «Центрофинанс»</p>
+
+				</div>
+
+				<a href="/zaimy.html" class="btn btn--red alert_up__btn">Оставить заявку</a>
+
+			</div>
+
+			<button class="alert_up__close ico ico--close">Закрыть</button>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-pass alert-lk">
+
+			<form class="alert-lk__form password-input" autocomplete="off" novalidate="novalidate">
+
+				<h3 class="alert_up__title">Личный кабинет</h3>
+
+				<p class="alert_up__info mb20">Для входа необходим пароль</p>
+
+				<input type="hidden" class="password-input__form" name="USER_PASSWORD">
+
+				<div class="mb20">
+
+					<label class="input-box">
+						<input type="text" class="input input--error input-box__input password-input__input" autocomplete="off" value="">
+						<span class="input-box__label">Пароль</span>
+					</label>
+
+					<div class="alert_up__text-error">
+						Укажите пароль
+					</div>
+
+				</div>
+
+				<div class="mb5">
+
+					<button class="btn btn--red alert_up__btn">Войти</button>
+
+				</div>
+
+			</form>
+
+			<p class="alert-lk__foot">
+				<button class="alert-lk__foot-link btn-alert_up" data-alert-up="lk-kod">Забыли пароль?</button>
+				<button class="alert-lk__foot-link btn-alert_up" data-alert-up="lk">Поменять номер телефона</button>
+			</p>
+
+			<button class="alert_up__close ico ico--close">Закрыть</button>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-reg alert-lk">
+
+			<form class="alert-lk__form" autocomplete="off" novalidate="novalidate">
+
+				<h3 class="alert_up__title">Новый клиент</h3>
+
+				<p class="alert_up__info mb20">Придумайте пароль, который запрашивается при каждом входе в кабинет</p>
+
+				<input type="hidden" class="password-input__form" name="USER_PASSWORD">
+
+				<div class="mb20">
+
+					<label class="input-box">
+						<input type="text" class="input input-box__input password-input__input" autocomplete="off" value="">
+						<span class="input-box__label">Пароль</span>
+					</label>
+
+				</div>
+
+				<div class="mb5">
+
+					<button class="btn btn--red alert_up__btn">Регистрация</button>
+
+				</div>
+
+			</form>
+
+			<p class="alert-lk__foot">
+				<button class="alert-lk__foot-link btn-alert_up" data-alert-up="lk">Поменять номер телефона</button>
+			</p>
+
+			<button class="alert_up__close ico ico--close">Закрыть</button>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk alert-lk">
+
+			<form class="alert-lk__form alert-lk__inner" autocomplete="off" novalidate="novalidate">
+
+				<h3 class="alert_up__title">Личный кабинет</h3>
+
+				<p class="alert_up__info mb20">Для входа необходим номер телефона, который вы указали при оформлении договора</p>
+
+				<div class="mb20">
+
+					<label class="input-box">
+						<input class="input input-box__input mask-tel" type="tel">
+						<span class="input-box__label">Телефон</span>
+					</label>
+
+				</div>
+
+				<div class="mb25">
+
+					<label class="checkbox alert-lk__rule">
+						<span>
+							Согласен на <a href="">обработку персональных данных</a> и ознакомлен с <a href="">политикой конфиденциальности</a>
+						</span>
+						<input type="checkbox" class="hide">
+					</label>
+
+					<div class="alert_up__text-error">
+						Необходимо согласится с обработкой персональных данных и ознакомится с политикой конфиденциальности
+					</div>
+
+				</div>
+
+				<button class="btn btn--red alert_up__btn">Продолжить</button>
+
+			</form>
+
+			<button class="alert_up__close ico ico--close">Закрыть</button>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-reset alert-lk">
+
+			<form class="alert-lk__form alert-lk__inner password-input" autocomplete="off" novalidate="novalidate">
+
+				<h3 class="alert_up__title">Новый пароль</h3>
+
+				<p class="alert_up__info mb20">Придумайте пароль, который будуте использовать для входа в кабинет</p>
+
+				<input type="hidden" class="password-input__form" name="USER_PASSWORD">
+
+				<div class="mb20">
+
+					<label class="input-box">
+						<input type="text" class="input input-box__input password-input__input" autocomplete="off" value="">
+						<span class="input-box__label">Новый пароль</span>
+					</label>
+
+				</div>
+
+				<div class="mb5">
+
+					<button class="btn btn--red alert_up__btn">Войти</button>
+
+				</div>
+
+			</form>
+
+			<button class="alert_up__close ico ico--close">Закрыть</button>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-kod alert-lk">
+
+			<form class="alert-lk__form" autocomplete="off" novalidate="novalidate">
+
+				<h3 class="alert_up__title">Код из СМС</h3>
+
+				<p class="alert_up__info mb30">Мы отправили код на ваш номер телефона</p>
+
+				<div class="mb20">
+
+					<label class="input-box">
+						<input type="text" class="input input-box__input" autocomplete="off">
+						<span class="input-box__label">Код из СМС</span>
+					</label>
+
+				</div>
+
+				<div class="mb5">
+
+					<button class="btn btn--red alert_up__btn">Войти</button>
+
+				</div>
+
+			</form>
+
+			<p class="alert-lk__foot">
+				<button class="alert-lk__foot-link btn-alert_up" data-alert-up="lk">Поменять номер телефона</button>
+			</p>
+
+			<button class="alert_up__close ico ico--close">Закрыть</button>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-kod-reg alert-lk">
+
+			<form class="alert-lk__form" autocomplete="off" novalidate="novalidate">
+
+				<div class="mb30">
+
+					<h3 class="alert_up__title">Подтверждение</h3>
+
+				</div>
+
+				<label class="input-box">
+					<input class="input input-box__input">
+					<span class="input-box__label">Код из SMS</span>
+				</label>
+
+				<label class="btn btn--red btn--block">Подтвердить<input type="submit" class="hide"></label>
+
+				<p class="alert-lk__repeat-kod">
+					Повторно запросить код можно будет <br>через
+					<a class="alert-lk__kod-tictak"><span id="alert-lk__repeat-kod-lk-reg" data-start="59">0:59</span> сек</a>
+					<a class="alert-lk__kod-repeat hide" onClick="timerSec('#alert-lk__repeat-kod-lk-reg')">повторно отправить смс</a>
+				</p>
+
+			</form>
+
+			<p class="alert-lk__foot">
+				Нет аккаунта? <button class="alert-lk__foot-link btn-alert_up" data-alert-up="lk">Зарегистрируйтесь</button>
+			</p>
+
+			<button class="alert_up__close ico ico--close">Закрыть</button>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="alert_up__window alert_up__window--lk-login_request alert-lk">
+			<div class="alert-lk__form">
+				<p class="alert_up__h3">Проверка</p>
+				<span class="alert_up__loading loading-spin">
+					<svg width="44" height="44">
+						<circle stroke="#ff0142" stroke-dasharray="88 80" stroke-linecap="round" stroke-width="4" fill="none" r="19" cy="22" cx="22"/>
+					</svg>
+				</span>
+				<p class="alert-lk__request">Это может занять минуту, мы проверяем Ваш телефон в базе <a onClick="repeatKod()">есть</a> <a class="btn-alert_up" data-alert-up="lk-not-numer">нет</a></p>
+			</div>
+			<p class="alert-lk__foot">Есть аккаунт? <a class="btn-alert_up" data-alert-up="lk">Авторизируйтесь</a></p>
+			<a class="alert_up__close ico ico--close"></a>
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-not-numer alert-lk">
+			<div class="alert-lk__form">
+				<p class="alert_up__h3">Проверка</p>
+				<p class="alert-lk__request-result"><span class="ico ico--triangle"></span>Указанного номера нет в базе данных. За вопросами обратитесь в службу поддержки компании «Центроинанс»</p>
+			</div>
+			<p class="alert-lk__foot">Есть аккаунт? <a class="btn-alert_up" data-alert-up="lk">Авторизируйтесь</a></p>
+			<a class="alert_up__close ico ico--close"></a>
+		</div>
+
+		<div class="alert_up__window alert_up__window--lk-setpass alert-lk">
+			<form class="alert-lk__form" autocomplete="off" novalidate="novalidate">
+				<p class="alert_up__h3">Регистрация</p>
+				<label class="input-box">
+					<input class="input input-box__input" type="password">
+					<span class="input-box__label">Придумайте пароль</span>
+				</label>
+				<label class="btn btn--red btn--block">Проверить<input type="submit" class="hide"></label>
+			</form>
+			<p class="alert-lk__foot">Есть аккаунт? <a class="btn-alert_up" data-alert-up="lk">Авторизируйтесь</a></p>
+			<a class="alert_up__close ico ico--close"></a>
+		</div>
+
+
+
+		<div class="alert_up__window alert_up__window--email alert-lk">
+			<form class="alert-lk__form" novalidate>
+				<p class="alert_up__h3">Отправить заявку</p>
+				<label class="input-box">
+					<input class="input input-box__input" type="email">
+					<span class="input-box__label">Ваш e-mail</span>
+				</label>
+				<label class="btn btn--red btn--block">Отправить<input type="submit" class="hide"></label>
+			</form>
+			<a class="alert_up__close ico ico--close"></a>
+		</div>
+
+		<div class="alert_up__window alert_up__window--help">
+			<div class="alert_up__h3">Нужна помощь?</div>
+			<ul class="alert-help alert_up__bg clr">
+				<li>
+					<a href="tel:88007773737">
+						Горячая линия
+						<span class="alert-help__tel">8 800 777-37-37</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:info@centrofinans.ru">
+						Задать вопрос
+						<span class="alert-help__mail">info@centrofinans.ru</span>
+					</a>
+				</li>
+				<li>
+					<a href="faq.html">
+						Ответы на вопросы
+						<span class="alert-help__btn btn btn--yellow">Перейти</span>
+					</a>
+				</li>
+			</ul>
+			<a class="alert_up__close ico ico--close"></a>
+		</div>
+
+		<div class="alert_up__window alert_up__window--geo alert-lk">
+
+			<h4 class="alert_up__h3 hidden-sm">Выберите регион</h4>
+
+			<div class="map-address clr">
+
+				<div class="clr">
+
+					<a class="pull-right map-address__toggle-map visible-sm" data-show="Показать карту" data-hide="Скрыть карту"></a>
+
+				</div>
+
+				<div class="pull-left w450 map-address__toggle-map-box">
+
+					<div id="map-popup"></div>
+
+					<script>
+
+						function figakMap() {
+
+							var myMap = new ymaps.Map('map-popup', {
+								center: [55.73996, 37.5797],
+								zoom: 18,
+								controls: []
+							});
+
+
+							var zoomControl = new ymaps.control.ZoomControl({
+								options: {
+									visible: true
+								}
+							});
+							myMap.controls.add(zoomControl);
+
+							myMap.behaviors.disable('scrollZoom');
+
+
+							var myPlacemark = new ymaps.Placemark(myMap.getCenter(), false, false);
+
+							myMap.geoObjects.add(myPlacemark);
+
+						}
+
+					</script>
+
+				</div>
+
+				<div class="pull-right w450">
+
+					<form class="map-address__address-input" onreset="$(this).addClass('map-address__address-input--empty');$(this).children('.input').attr('value','')">
+						<input class="input" placeholder="Введить название населенного пункта" onkeyup="$(this).parent().toggleClass('map-address__address-input--empty',$(this).val().length<4);" value="Москва, Московская область">
+						<label class="ico ico--close-reset"><input type="reset" class="hide"></label>
+					</form>
+
+					<ul class="map-address__contact">
+						<li><a href="tel:88125003333"><span class="ico ico--tel"></span>8 812 500 33 33</a></li>
+						<li>
+							<span class="ico ico--time"></span>
+							<a class="map-address__contact-rasp">Сегодня</a> 10:00–19:00 <span class="hidden-sm">/</span> <span class="display_block-sm">обед 14:00–15:00</span>
+						</li>
+						<li><span class="ico ico--map-mark"></span>ул. Володарского, д. 6, Центральная площадь</li>
+					</ul>
+
+					<a class="btn btn--red btn--big">Выбрать офис</a>
+
+					<p class="map-address__lovizaim">
+						Если вы не нашли удобный офис для оформления займа наличными, можете оформить заём онлайн на карту у наших партнеров <a href="http://centrofinansverstka.sptnktest.ru/online.html" rel="nofollow">LoviZaim</a>
+					</p>
+
+					<a href="online.html" class="btn btn--red btn--super-big hide">Взять займ онлайн</a>
+
+					<p class="map-address__lovizaim">
+						<span class="hide">Вы можете отправить в отдел разработки заявку с просьбой открыть офис в данном населённом пункте </span><a href="http://centrofinansverstka.sptnktest.ru/online.html" rel="nofollow"><img src="/images/lovizaim.svg" alt=""></a>
+					</p>
+
+				</div>
+
+			</div>
+
+			<a class="alert_up__close ico ico--close"></a>
+		</div>
+
+<!--#if expr='$alert_jobs=show' -->
+
+		<div class="alert_up__window alert_up__window--video-youtube">
+			<div id="video-youtube__box"></div>
+			<a class="alert_up__close ico ico--close"></a>
+		</div>
+
+<!--#endif-->
+
+<!--#if poll' -->
+
+		<div class="alert_up__window alert_up__window--poll-start alert-pull">
+
+			<h3 class="alert-pull__h3">Опрос клиентов</h3>
+
+			<p class="alert-pull__text">Уважаемый Владимир Петрович. Для того, предложить вам найболее интересные и удобные виды займов, просим ответить на несколько вопросов</p>
+
+			<a class="btn btn--red btn--block btn-alert_up alert-pull__submit" data-alert-up="poll">Пройти опрос</a>
+
+			<div class="alert-pull__link">
+
+				<a class="btn-alert_up" data-alert-up="poll-alt">Не хочу проходить опрос</a>
+
+			</div>
+
+			<a class="alert_up__close ico ico--close"></a>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--poll-finish alert-pull">
+
+			<svg class="alert-pull__svg" width="100" height="100" viewBox="0 0 100 100">
+
+				<circle cx="50" cy="50" r="49" stroke="#2a3246" fill="none"/>
+				<path fill="none" fill-rule="nonzero" stroke="#FF0142" d="M30 50 L45 65 74 34"/>
+
+			</svg>
+
+			<h3 class="alert-pull__h3">Спасибо!</h3>
+
+			<p class="alert-pull__text">Мы обработаем результаты отпроса <br>и постараемся улучшить сервис</p>
+
+			<a class="btn btn--red btn--block alert-pull__submit alert_up__close">Закрыть</a>
+
+			<a class="alert_up__close ico ico--close"></a>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--poll-alt alert-pull">
+
+			<form class="alert-pull__form" novalidate>
+
+				<h3 class="alert-pull__h3">Причина</h3>
+
+				<div class="alert-pull__bg">
+
+					<div class="alert-pull__radio-btns clr">
+
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Нет времени</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Не хочу</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Я стесняюсь</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll" value="custom">
+							<span class="alert-pull__radio-label">Свой вариант</span>
+						</label>
+
+					</div>
+
+					<input class="hide alert-pull__input input alert-pull__input-custom" placeholder="Например, нет доверия">
+
+				</div>
+
+				<label class="alert-pull__submit btn btn--red btn--block">Отправить<input type="submit" class="hide"></label>
+
+			</form>
+
+			<a class="alert_up__close ico ico--close"></a>
+
+		</div>
+
+		<div class="alert_up__window alert_up__window--poll alert-pull">
+
+			<form class="alert-pull__form" novalidate>
+
+				<h3 class="alert-pull__h3">На какие цели займ?</h3>
+
+				<div class="alert-pull__bg">
+
+					<div class="alert-pull__radio-btns clr">
+
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Лекарства</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Питание</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Ремонт</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">До зарплаты</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Покупки</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Подарки</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">На автомобиль</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Счёт из ЖКХ</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll">
+							<span class="alert-pull__radio-label">Другой займ</span>
+						</label>
+						<label class="alert-pull__radio">
+							<input class="hide" type="radio" name="poll" value="custom">
+							<span class="alert-pull__radio-label">Свой вариант</span>
+						</label>
+
+					</div>
+
+					<input class="hide alert-pull__input input alert-pull__input-custom" placeholder="Например, инвестиции">
+
+				</div>
+
+				<label class="alert-pull__submit btn btn--red btn--block">Отправить<input type="submit" class="hide"></label>
+
+			</form>
+
+			<a class="alert_up__close ico ico--close"></a>
+
+		</div>
+
+<!--#endif-->
+
+		<button type="button" class="modal__close modal__close-btn button">Закрыть</button>
+
+	</div>
