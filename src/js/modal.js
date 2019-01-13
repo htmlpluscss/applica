@@ -10,21 +10,21 @@
 
 		el.addEventListener('click', function () {
 
-			CF.hideModal();
+			APPLICA.hideModal();
 
 		});
 
 	});
 
-	CF.hideModal = function() {
+	APPLICA.hideModal = function() {
 
 		modal.classList.add('hidden-visible');
 
-		CF.body.classList.remove('modal-show');
-		CF.wrapper.style.top = 0;
-		window.scrollTo(0,CF.windowScrollOld);
+		APPLICA.body.classList.remove('modal-show');
+		APPLICA.wrapper.style.top = 0;
+		window.scrollTo(0,APPLICA.windowScrollOld);
 
-		CF.activeModal = false;
+		APPLICA.activeModal = false;
 
 		// clear video
 		if (document.getElementById('modal-video')){
@@ -35,38 +35,38 @@
 
 	};
 
-	CF.modalShow = function (selector) {
+	APPLICA.modalShow = function (selector) {
 
-		if(!CF.activeModal){
+		if(!APPLICA.activeModal){
 
-			CF.windowScrollOld = window.pageYOffset;
+			APPLICA.windowScrollOld = window.pageYOffset;
 
-			CF.wrapper.style.top = -CF.windowScrollOld + 'px';
+			APPLICA.wrapper.style.top = -APPLICA.windowScrollOld + 'px';
 
 		}
 
-		CF.activeModal = modal.querySelector('.modal__item--' + selector);
+		APPLICA.activeModal = modal.querySelector('.modal__item--' + selector);
 
 		Array.prototype.forEach.call(items, function(el){
 
-			el.classList.toggle('hidden-visible', el !== CF.activeModal);
+			el.classList.toggle('hidden-visible', el !== APPLICA.activeModal);
 
 		});
 
 		modal.classList.remove('hidden-visible');
 
-		CF.body.classList.add('modal-show');
+		APPLICA.body.classList.add('modal-show');
 		window.scrollTo(0,0);
 
 		// close menu
-		if(CF.OpenMenu){
+		if(APPLICA.OpenMenu){
 
 			document.body.classList.remove('menu-show');
-			CF.OpenMenu = false;
+			APPLICA.OpenMenu = false;
 
 		}
 
-		CF.activeModal.focus();
+		APPLICA.activeModal.focus();
 
 	};
 
@@ -74,7 +74,7 @@
 
 		el.addEventListener('click', function(e) {
 
-			CF.modalShow(this.getAttribute('data-modal'));
+			APPLICA.modalShow(this.getAttribute('data-modal'));
 
 		});
 

@@ -8,13 +8,13 @@ https://github.com/htmlpluscss/
 
 */
 
-var CF = {};
+var APPLICA = {};
 
 (function(){
 
-	CF.body = document.body;
-	CF.width = window.innerWidth,
-	CF.height = window.innerHeight;
+	APPLICA.body = document.body;
+	APPLICA.width = window.innerWidth,
+	APPLICA.height = window.innerHeight;
 
 // resize
 
@@ -27,8 +27,8 @@ var CF = {};
 			resizeTimeout = setTimeout(function() {
 
 				resizeTimeout = null;
-				CF.width = window.innerWidth;
-				CF.height = window.innerHeight;
+				APPLICA.width = window.innerWidth;
+				APPLICA.height = window.innerHeight;
 
 			}, 100);
 
