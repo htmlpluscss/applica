@@ -1,0 +1,64 @@
+	<aside class="last-proects">
+
+{% set list = [
+	{
+		title: "How to write the right letter to  the development studio",
+		link: "",
+		img: "1",
+		text: "What to write about yourself and your  project in the first letter, so that the  studio does not pass by?"
+	},
+	{
+		title: "Design Lynch: a new version  of&nbsp;Skype",
+		link: "",
+		img: "2",
+		text: "Paper 53, Tayasui Sketches, Procreate  and Medibang Paint - what to choose?  Designer&apos;s opinion"
+	},
+	{
+		title: "Digest of the Internet of  things: October 2017",
+		link: "",
+		img: "3",
+		text: "We run it reluctantly, but we can not  do without it yet - Skype, now in a new  design. Comparing with the…"
+	}
+] %}
+
+		<ul class="last-proects__box">
+
+{% for item in list %}
+
+			<li class="last-proects__item">
+
+				<a href="{{ item.link }}" class="last-proects__link">
+
+					<span class="last-proects__img last-proects__img--{{ item.img }}">
+
+						<picture>
+
+							<source srcset="/img/last-proects/{{ item.img }}@1x.webp 1x, /img/last-proects/{{ item.img }}@2x.webp 2x" type="image/webp">
+
+							<source srcset="/img/last-proects/{{ item.img }}@1x.jpg 1x, /img/last-proects/{{ item.img }}@2x.jpg 2x">
+
+							<img src="/img/last-proects/{{ item.img }}@1x.jpg" alt="{{ item.title | striptags(true) | escape | nl2br }}">
+
+						</picture>
+
+					</span>
+
+					<p>
+
+						<strong class="h3">
+							{{ item.title | safe }}
+						</strong>
+
+						{{ item.text }}
+
+					</p>
+
+				</a>
+
+			</li>
+
+{% endfor %}
+
+		</ul>
+
+	</aside>

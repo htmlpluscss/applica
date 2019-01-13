@@ -1,0 +1,46 @@
+.home-we-build {
+
+	padding: 0 0 141px;
+
+	.h1 {
+
+		margin-bottom: 20px;
+
+	}
+
+	p {
+
+		font-family: OpenSans;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 30px;
+		color: var(--text);
+		max-width: 530px;
+
+	}
+
+	ul {
+
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 8px;
+		justify-content: space-between;
+
+	}
+
+	li {
+
+		width: 575px;
+		padding: 55px 20px 0 65px;
+
+	}
+
+	.h3 {
+
+		margin-bottom: 14px;
+		display: block;
+
+	}
+
+
+}

@@ -1,45 +1,120 @@
-{% set title = "Долгосрочные онлайн займы" %}
+{% set title = "Applica" %}
 
-{% set description = "Ищите где взять долгосрочный займ? Оформляйте долгосрочный онлайн кредит с ежемесячной оплатой под минимальный процент. Только у нас потребительские кредиты наличными на 6 месяцев!" %}
+{% set description = "Web & Mobile Applications Design, Development" %}
 
-{% set calculator = "home" %}
-{% set calculatorHead = "Берите займы наличными — получайте призы отличные!" %}
-
-{% set seoBlock = true %}
 {% set hideBreadcrumbs = true %}
-
 {% extends "template/base.html" %}
 
 {% block content %}
 
-	<div class="calculator-home">
-
-		<div class="calculator-home__img">
-
-			<picture>
-
-				<source srcset="/img/calculator/bg--320@1x.webp 1x, /img/calculator/bg--320@2x.webp 2x" media="(max-width: 320px)" type="image/webp">
-				<source srcset="/img/calculator/bg--360@1x.webp 1x, /img/calculator/bg--360@2x.webp 2x" media="(max-width: 360px)" type="image/webp">
-				<source srcset="/img/calculator/bg--414@1x.webp 1x, /img/calculator/bg--414@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
-				<source srcset="/img/calculator/bg--1336@1x.webp 1x, /img/calculator/bg--1336@2x.webp 2x" media="(max-width: 1336px)" type="image/webp">
-				<source srcset="/img/calculator/bg@1x.webp 1x, /img/calculator/bg@2x.webp 2x" type="image/webp">
-
-				<source srcset="/img/calculator/bg--320@1x.jpg 1x, /img/calculator/bg--320@2x.jpg 2x" media="(max-width: 320px)">
-				<source srcset="/img/calculator/bg--360@1x.jpg 1x, /img/calculator/bg--360@2x.jpg 2x" media="(max-width: 360px)">
-				<source srcset="/img/calculator/bg--414@1x.jpg 1x, /img/calculator/bg--414@2x.jpg 2x" media="(max-width: 414px)">
-				<source srcset="/img/calculator/bg--1336@1x.jpg 1x, /img/calculator/bg--1336@2x.jpg 2x" media="(max-width: 1336px)">
-				<source srcset="/img/calculator/bg@1x.jpg 1x, /img/calculator/bg@2x.jpg 2x">
-
-				<img src="/img/calculator/bg@1x.jpg" alt="">
-
-			</picture>
-
-		</div>
-
-	</div>
-
 	<div class="center">
-home
+
+		<article>
+
+			<div class="home-top">
+
+				<h1 class="h1">
+					Web & Mobile Applications Design, Development
+				</h1>
+
+				<p>
+					I wanted to start designing some ideas that for a long time I had only  on paper and stored on my cell phone, I decided to look for some  challenge, something that makes more sense with what I thought.
+				</p>
+
+				<a href="#" class="home-top__scroll-link">
+					Scroll to see more
+				</a>
+
+				<picture>
+
+					<source srcset="/img/calculator/bg--414@1x.webp 1x, /img/calculator/bg--414@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+					<source srcset="/img/calculator/bg@1x.webp 1x, /img/calculator/bg@2x.webp 2x" type="image/webp">
+
+					<source srcset="/img/calculator/bg--320@1x.jpg 1x, /img/calculator/bg--320@2x.jpg 2x" media="(max-width: 767px)">
+					<source srcset="/img/calculator/bg@1x.jpg 1x, /img/calculator/bg@2x.jpg 2x">
+
+					<img class="home-top__img" src="/img/calculator/bg@1x.jpg" alt="">
+
+				</picture>
+
+			</div>
+
+{% include "_include/home-card.html" %}
+
+			<div class="home-applications">
+
+				<h2 class="h1">
+					Web & Mobile Applications
+				</h2>
+
+				<p>
+					Earlier this year (January 2018). I started to think about how I could improve my  design skills and attract more customers. I wanted to start designing some ideas  that for a long time I had only on paper and stored on my cell phone, I decided to  look for some challenge, something that makes more sense with what I thought. I  saw that many designers (especially in dribbble) made a daily user interface, I really  liked the idea, but the problem was that the result was just something nice and did  not solve any problem.
+				</p>
+
+				<p>
+					I didn&apos;t want to just draw something nice; I wanted to create real solutions to real  problems, develop designs that make sense and inspire others to come up with  more ideas. And so I settled on making my own personal challenge with the goal of  not only improving and showing off my design skills, but also improving my ability to  understand, observe and solve problems faster.
+				</p>
+
+			</div>
+
+			<div class="home-we-build">
+
+				<h2 class="h1">
+					Yes, We Can Build it
+				</h2>
+
+				<p>
+					Creating a great product is really hard work but you will  never be the same once you do it right
+				</p>
+
+				<ul>
+
+					<li>
+						<strong class="h3">
+							Design interfaces
+						</strong>
+						<p>
+							Creating a great product is really hard work but you will  never be the same once you do it right
+						</p>
+					</li>
+
+					<li>
+						<strong class="h3">
+							Website development
+						</strong>
+						<p>
+							Creating a great product is really hard work but you will  never be the same once you do it right
+						</p>
+					</li>
+
+					<li>
+						<strong class="h3">
+							Mobile applications
+						</strong>
+						<p>
+							Creating a great product is really hard work but you will  never be the same once you do it right
+						</p>
+					</li>
+
+					<li>
+						<strong class="h3">
+							Support and Development
+						</strong>
+						<p>
+							Creating a great product is really hard work but you will  never be the same once you do it right
+						</p>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</article>
+
 	</div>
+
+{% include "_include/last-proects.html" %}
+
+{% include "_include/our-clients.html" %}
 
 {% endblock %}

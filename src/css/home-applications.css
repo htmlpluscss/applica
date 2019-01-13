@@ -1,0 +1,27 @@
+
+.home-applications {
+
+	position: relative;
+	padding: 152px 0 150px 496px;
+
+	.h1 {
+
+		position: absolute;
+		top: 180px;
+		left: 0;
+		max-width: 400px;
+
+	}
+
+	p {
+
+		font-family: OpenSans;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 30px;
+		color: var(--text);
+		margin: 30px 0;
+
+	}
+
+}

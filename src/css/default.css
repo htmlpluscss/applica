@@ -3,8 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/*
-	color: red !important; */
+/* color: red !important; */
 
 }
 
@@ -21,10 +20,9 @@ body {
 
 	color: var(--color);
 	min-width: 320px;
-	font-size: 14px;
-	line-height: 1.4;
-	padding: 12px;
-	font-family: 'ProximaNova', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-family: 'Rubik', sans-serif;
 	-webkit-text-size-adjust: none;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: scrollbar;
@@ -34,7 +32,7 @@ body {
 	flex-direction: column;
 	overflow-y: scroll;
 
- 	/*background-image: url(/css/header.png);*/
+ 	/* background-image: url(/css/index.png); */
  	background-size: 1440px auto;
 	background-position: center 0;
 
@@ -42,12 +40,6 @@ body {
 	@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
 		min-height: 100vh;
-
-	}
-
-	@media ($mdWidth) {
-
-		padding: 0;
 
 	}
 
@@ -59,19 +51,6 @@ body {
 	flex-grow: 1;
 	position: relative;
 	flex-direction: column;
-
-	.body--bg &::after {
-
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		content: '';
-		z-index: 1;
-		background-color: rgba(30, 36, 52, 0.9);
-
-	}
 
 }
 
@@ -133,55 +112,25 @@ svg {
 
 .h1 {
 
-	font-weight: 300;
 	font-size: 50px;
-	line-height: 78px;
-
-	@media ($smWidth) {
-
-		font-size: 24px;
-		line-height: 30px;
-		font-weight: 600;
-
-	}
+	line-height: 60px;
+	font-weight: 700;
 
 }
 
 .h2 {
 
-	font-weight: 300;
-	font-size: 36px;
-	line-height: 44px;
-
-	@media ($smWidth) {
-
-		font-size: 24px;
-		line-height: 30px;
-		font-weight: 600;
-
-	}
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 700;
 
 }
 
 .h3 {
 
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 28px;
-
-	@media ($smWidth) {
-
-		font-size: 18px;
-		line-height: 24px;
-		font-weight: 600;
-
-	}
-
-}
-
-.align-center {
-
-	text-align: center;
+	font-size: 18px;
+	line-height: 29px;
+	font-weight: 700;
 
 }
 
@@ -214,35 +163,8 @@ time {
 	display: flex;
 	flex-direction: column;
 
-	@media ($mdWidth) {
-
-		padding-left: var(--borderPage);
-		padding-right: var(--borderPage);
-
-	}
-
 }
 
-hr {
-
-	border: 0;
-	height: 1px;
-	background-color: #e6e9f0;
-
-}
-
-table {
-
-	border: 0;
-	border-collapse: collapse;
-
-	td {
-
-		vertical-align: top;
-
-	}
-
-}
 
 /* hidden
 -----------------------------------------------------------------------------*/

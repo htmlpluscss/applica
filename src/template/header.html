@@ -2,268 +2,119 @@
 
 		<div class="center">
 
-			<div class="header__top">
+			<a class="header__logo" href="/">
 
-				<a class="header__logo" href="/">
-					Центрофинанс
-				</a>
+				<svg width="100" height="33" viewBox="0 0 100 33">
+					<path d="M16.103 24.564c-.77.154-1.795-.205-2.154-1.18l-1.18-3.333h-8l-1.384 3.334c-.154.769-.77 1.18-1.59 1.18h-.36C.463 24.153.052 23.178.257 22.41L7.282 2.872c.205-.616.77-1.18 1.59-1.18.769 0 1.333.564 1.538 1.18l6.667 19.538c.41.77.051 1.744-.974 2.154zm-4.308-7.846l-2.872-8.41-2.974 8.41h5.846zM55.949 23.026V1.64c0-.872.718-1.59 1.64-1.59.873 0 1.59.718 1.59 1.59v21.385c0 .923-.717 1.64-1.59 1.64a1.62 1.62 0 0 1-1.64-1.64zM61.692 4.41c-.307-.307-.513-.718-.513-1.128 0-.41.206-.872.513-1.128.308-.308.718-.513 1.129-.513.41 0 .871.205 1.128.513.307.308.461.718.461 1.128 0 .41-.154.872-.461 1.128a1.59 1.59 0 0 1-1.128.462c-.41 0-.821-.154-1.129-.462zm-.461 18.616V9.795c0-.872.718-1.59 1.64-1.59.873 0 1.59.718 1.59 1.59v13.23c0 .924-.717 1.642-1.59 1.642a1.62 1.62 0 0 1-1.64-1.641zM66.359 16.41c0-4.564 3.692-8.256 8.205-8.256a8.354 8.354 0 0 1 7.18 4.102c.461.77.153 1.795-.616 2.257-.769.41-1.795.154-2.256-.616a4.957 4.957 0 0 0-4.308-2.512c-2.718 0-4.974 2.256-4.974 4.974 0 2.718 2.256 4.974 4.974 4.974a5.014 5.014 0 0 0 4.205-2.307 1.656 1.656 0 0 1 2.257-.513c.769.513.974 1.487.461 2.256a8.176 8.176 0 0 1-6.923 3.795c-4.564.103-8.205-3.64-8.205-8.154zM99.795 16.513v6.41c0 .974-.667 1.641-1.641 1.641-.667 0-1.59-.667-1.59-1.64-1.436 1.179-2.974 1.64-4.872 1.64-4.615 0-8.307-3.436-8.307-8.051 0-4.616 3.743-8.308 8.359-8.308 4.615 0 8.05 3.692 8.05 8.308zm-3.18 0c0-2.77-2.102-5.077-4.871-5.077-2.77 0-5.077 2.308-5.077 5.077 0 2.77 2.307 4.872 5.077 4.872 2.769 0 4.871-2.103 4.871-4.872zM45.846 8.256c-2.102 0-4 .82-5.436 2.103l-.102.103c-1.436 1.282-3.385 3.487-9.539 9.794a4.997 4.997 0 0 1-3.282 1.231c-2.77 0-4.974-2.256-4.974-4.974v-.051c0-2.77 2.256-4.975 4.974-4.975 2.36 0 4.308 1.641 4.82 3.846.924-.974 1.744-1.795 2.514-2.564a8.178 8.178 0 0 0-7.334-4.513c-4.513 0-8.256 3.693-8.256 8.257v14.769c0 .872.718 1.59 1.64 1.59.873 0 1.59-.718 1.59-1.59v-8.205c1.385 1.026 3.129 1.692 4.975 1.692 2.051 0 3.949-.769 5.385-2 1.23-1.025 7.076-7.282 9.23-9.487.923-1.077 2.257-1.744 3.744-1.744 2.77 0 4.974 2.257 4.974 4.975 0 2.77-2.256 4.974-4.974 4.974a5.016 5.016 0 0 1-4.872-3.743l-3.385 3.538v9.949c0 .872.718 1.59 1.641 1.59.872 0 1.59-.718 1.59-1.59v-8.154c1.385 1.026 3.128 1.692 4.975 1.692A8.251 8.251 0 0 0 54 16.513c.103-4.513-3.59-8.257-8.154-8.257z"/>
+				</svg>
 
-				<div class="header__geo">
+			</a>
 
-					<button type="button" class="header__geo-current header__link header__link--geo button" data-alert-up="geo">
-						Город не выбран
-					</button>
+			<nav class="header__nav">
 
-<!--
-если есть кука BITRIX_SM_geo
-то блок .header__geo-confirm не выводить
--->
+				<ul class="menu">
 
-					<div class="header__geo-confirm">
+{% set menuClassLi = "menu__item" %}
 
-						<p>
-							Информация будет отображается для вашего региона:
-							<b class="header__geo-confirm-name">Северодвинск</b>
-						</p>
-
-						<div class="header__geo-confirm-btns">
-
-							<button type="button" class="btn btn--medium header__geo-confirm-true">Всё верно</button>
-
-							<button type="button" class="btn btn--medium btn--link" data-modal="geo">Выбрать другой</button>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="header__links">
-
-					<div class="header__links-item">
-
-						<a href="/adresa-ofisov/" class="header__link header__link--office">
-							Адреса офисов
-						</a>
-
-					</div>
-
-					<div class="header__links-item">
-
-						<button type="button" class="header__link header__link--support button" data-alert-up="help">
-							Помощь
-						</button>
-
-					</div>
-
-				</div>
-
-				<button type="button" class="header__btn-lk header__btn-lk--unlock btn btn--big" data-mobile="Войти">
-					Личный кабинет
-				</button>
-
-				<button class="button header__btn-menu-toggle visible-md" type="button">
-					<span>открыть/закрыть меню сайта</span>
-				</button>
-
-			</div>
-
-			<hr>
-
-			<div class="header__nav">
-
-				<form class="header__search" action="/" autocomplete="off">
-
-					<input class="header__search-input input" placeholder="Поиск по сайту">
-
-					<button type="reset" class="header__search-btn button">Искать</button>
-
-					<div class="header__search-result hide" data-head="результаты поиска">
-
-						<ul>
-							<li>
-								<a href=""><b>Как взя</b>ть займ?</a>
-							</li>
-							<li>
-								<a href=""><b>Как</b> <span>погасить</span> <b>взя</b>тый займ в банке?</a>
-							</li>
-							<li>
-								<a href=""><b>Как взя</b>ть займ?</a>
-							</li>
-							<li>
-								<a href=""><b>Как</b> <span>погасить</span> <b>взя</b>тый займ в банке?</a>
-							</li>
-						</ul>
-
-					</div>
-
-				</form>
-
-				<button type="button" class="header__btn-full-menu button">Всё меню</button>
-
-				<nav class="header__menu">
-
-					<ul class="header__menu-top">
-
-{% set menuTop = [
+{% set menu = [
 	{
-		title: "Займы",
+		title: "Portfolio",
 		link: "products"
 	},
 	{
-		title: "Акции",
-		link: "akcii"
+		subMenuBegin: true,
+		title: "Services",
+		link: "service"
 	},
+		{
+			title: "Audit and system engineering",
+			link: "engineering"
+		},
+		{
+			title: "Interface design",
+			link: "design"
+		},
+		{
+			title: "iOS applications development",
+			link: "ios"
+		},
+		{
+			title: "Android applications development",
+			link: "android"
+		},
+		{
+			title: "Application Support",
+			link: "support"
+		},
+		{
+			title: "Website development and support",
+			link: "website"
+		},
 	{
-		title: "Новости",
-		link: "novosti"
-	},
-	{
-		title: "Блог",
+		subMenuEnd: true,
+		title: "Blog",
 		link: "blog"
 	},
 	{
-		title: "Вопросы - ответы",
-		link: "vopros-otvet"
+		title: "About us",
+		link: "about"
 	},
 	{
-		title: "Вакансии",
-		link: "vakansii"
-	},
-	{
-		title: "Контакты",
-		link: "kontakty"
+		title: "Contacts",
+		link: "contacts"
 	}
 ] %}
 
-{% for item in menuTop %}
+{% for item in menu %}
 
-						<li class="header__menu-top-item">
-							<a class="header__menu-top-link" href="/{{item.link}}.html">{{item.title}}</a>
-						</li>
+					{% if item.subMenuEnd %}
 
-{% endfor %}
+						</ul>
 
-					</ul>
+{% set menuClassLi = "menu__item" %}
 
-{% set menuFull = [
-	{
-		head: "Кредитные продукты"
-	},
-		{
-			title: "Простой"
-		},
-		{
-			title: "Пенсионный"
-		},
-		{
-			title: "Долгосрочный"
-		},
-		{
-			title: "Онлайн"
-		},
-	{
-		head: "Центрофинанс"
-	},
-		{
-			title: "О компании"
-		},
-		{
-			title: "Документы"
-		},
-		{
-			title: "Вакансии"
-		},
-		{
-			title: "Работа у нас"
-		},
-		{
-			title: "Адреса офисов"
-		},
-		{
-			title: "Контакты"
-		},
-		{
-			title: "Центрофорбс"
-		},
-	{
-		head: "Разделы сайта"
-	},
-		{
-			title: "Акции"
-		},
-		{
-			title: "Новости"
-		},
-		{
-			title: "Блог"
-		},
-		{
-			title: "Вопросы - ответы"
-		},
-		{
-			title: "Правила цитирования"
-		},
-		{
-			title: "Арендодателям"
-		},
-		{
-			title: "Отзывы клиентов"
-		},
-		{
-			title: "Карта сайта"
-		}
-] %}
+					{% endif %}
 
-					<div class="header__menu-full">
+					<li class="{{ menuClassLi }}">
 
-{% set menuFullCol = 0 %}
+						<a  href="/{{item.link}}">
+							<span>{{ item.title }}</span>
+						</a>
 
-{% for item in menuFull %}
+						{% if item.subMenuBegin %}
 
-	{% if item.head %}
+{% set menuClassLi = "menu__sub-item" %}
 
-		{% set menuFullCol = menuFullCol + 1 %}
+						<ul class="menu__sub">
 
-		{% if loop.first == false %}
+						{% endif %}
 
-							</ul>
+					{% if not item.subMenuBegin %}
 
-						</div>
+					</li>
 
-		{% endif %}
-
-						<div class="header__menu-full-col header__menu-full-col--{{ menuFullCol }}">
-
-							<p class="header__menu-full-head">
-								{{item.head}}
-							</p>
-
-							<ul class="header__menu-full-list">
-
-	{% else %}
-
-								<li class="header__menu-full-item">
-									<a class="header__menu-full-link{% if item.title == 'Центрофорбс' %} header__menu-full-link--target-blank" target="_blank" rel="nofollow{% endif %}" href="/">{{ item.title }}</a>
-								</li>
-
-		{% if loop.last %}
-
-							</ul>
-
-						</div>
-
-		{% endif %}
-
-	{% endif %}
+					{% endif %}
 
 {% endfor %}
 
-					</div>
+				</ul>
 
-				</nav>
+				<div class="header__lang header__lang--{{ lang | default('en') }}">
 
-			</div>
+					<a href="/ru">RUS</a>
+					<a href="/">ENG</a>
+
+				</div>
+
+			</nav>
+
+			<button type="button" class="header__btn btn btn--big">
+				Get started
+			</button>
+
+			<button class="button header__btn-menu-toggle visible-md" type="button">
+				<span>открыть/закрыть меню сайта</span>
+			</button>
 
 		</div>
 

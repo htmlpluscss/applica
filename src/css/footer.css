@@ -1,122 +1,32 @@
 .footer {
 
 	flex-shrink: 0;
-	padding: 40px 0;
+	padding: 140px 0;
+	text-align: center;
+	background-color: var(--bg);
 
-	.center {
+	&__head {
 
-		display: flex;
-
-		@media ($mdWidth) {
-
-			display: block;
-			text-align: center;
-
-		}
-
-	}
-
-	&__copyright {
-
-		font-size: 13px;
-		line-height: 20px;
-		color: var(--light);
-		padding: 1px 40px 0 54px;
-		position: relative;
-
+		font-family: OpenSans;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 30px;
+		color: #fff;
+		margin-bottom: 12px;
 
 	}
 
-	.developer {
+	&__btn {
 
-		margin-left: auto;
-		padding-left: 50px;
-		position: relative;
+		height: 98px;
+		font-size: 80px;
+		font-weight: bold;
+		color: #fff;
+		border-bottom: 3px solid var(--red);
 
-		@media ($mdWidth) {
+		&:hover {
 
-			padding: 0;
-			margin: 30px 0 0;
-
-		}
-
-		.impaired & {
-
-			padding: 0;
-			margin: 68px 0 0;
-
-		}
-
-		&::before {
-
-			position: absolute;
-			top: 4px;
-			left: 28px;
-			content: '';
-			width: 1px;
-			height: 36px;
-			background-color: color(#79878e a(20%));
-
-			@media ($mdWidth) {
-
-				display: none;
-
-			}
-
-			.impaired & {
-
-				display: none;
-
-			}
-
-		}
-
-		a {
-
-			font-size: 11px;
-			line-height: 15px;
-			margin-top: 5px;
-			color: #a1a1a1;
-			display: flex;
-			flex-direction: column;
-
-			.impaired & {
-
-				font-size: 14px;
-				color: #000;
-				line-height: 20px;
-				padding: 0;
-				margin: 0;
-				display: inline-block;
-
-			}
-
-			&::after {
-
-				width: 68px;
-				height: 20px;
-				content: '';
-				display: block;
-				margin-left: auto;
-				position: relative;
-				background: url(/images/sprite.svg) -20px -312px;
-
-				@media ($mdWidth) {
-
-					margin: auto;
-
-				}
-
-				.impaired & {
-
-					margin: auto;
-					width: 92px;
-					height: 30px;
-					background-position: -110px -304px;
-
-				}
-
-			}
+			border-bottom-color: transparent;
 
 		}
 
