@@ -42,5 +42,45 @@
 
 	}
 
+	&__ico {
+
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 49px;
+		left: 0;
+		content: '';
+		background-color: #000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		fill: #fff;
+		border-radius: 4px;
+
+		&--red {
+
+			background-color: var(--red);
+
+		}
+
+		&--violet {
+
+			background-color: #864cea;
+
+		}
+
+		&--green {
+
+			background-color: #39dfc4;
+
+		}
+
+		&--blue {
+
+			background-color: #4ea4ff;
+
+		}
+
+	}
 
 }

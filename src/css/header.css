@@ -28,8 +28,15 @@
 
 	&__btn {
 
-		width: 209px;
-		height: 70px;
+		padding-right: 65px;
+
+		svg {
+
+			position: absolute;
+			top: 28px;
+			right: 28px;
+
+		}
 
 	}
 

@@ -1,6 +1,7 @@
 .home-top {
 
 	padding: 66px 0 158px;
+	position: relative;
 
 	.h1 {
 
@@ -64,8 +65,20 @@
 	&__img {
 
 		position: absolute;
+		bottom: 42px;
+		width: 50%;
 		right: 0;
-		bottom: 0;
+		top: 0;
+		overflow: hidden;
+		z-index: -1;
+
+		img {
+
+			position: absolute;
+			left: 46px;
+			bottom: 0;
+
+		}
 
 	}
 

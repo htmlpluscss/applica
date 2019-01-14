@@ -7,11 +7,11 @@
 
 {% block content %}
 
-	<div class="center">
+	<article>
 
-		<article>
+		<div class="home-top">
 
-			<div class="home-top">
+			<div class="center">
 
 				<h1 class="h1">
 					Web & Mobile Applications Design, Development
@@ -25,19 +25,27 @@
 					Scroll to see more
 				</a>
 
+			</div>
+
+			<div class="home-top__img">
+
 				<picture>
 
-					<source srcset="/img/calculator/bg--414@1x.webp 1x, /img/calculator/bg--414@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
-					<source srcset="/img/calculator/bg@1x.webp 1x, /img/calculator/bg@2x.webp 2x" type="image/webp">
+					<source srcset="/img/home-top--320@1x.webp 1x, /img/home-top--320@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+					<source srcset="/img/home-top@1x.webp 1x, /img/home-top@2x.webp 2x" type="image/webp">
 
-					<source srcset="/img/calculator/bg--320@1x.jpg 1x, /img/calculator/bg--320@2x.jpg 2x" media="(max-width: 767px)">
-					<source srcset="/img/calculator/bg@1x.jpg 1x, /img/calculator/bg@2x.jpg 2x">
+					<source srcset="/img/home-top--320@1x.png 1x, /img/home-top--320@2x.png 2x" media="(max-width: 767px)">
+					<source srcset="/img/home-top@1x.png 1x, /img/home-top@2x.png 2x">
 
-					<img class="home-top__img" src="/img/calculator/bg@1x.jpg" alt="">
+					<img src="/img/home-top@1x.png" alt="">
 
 				</picture>
 
 			</div>
+
+		</div>
+
+		<div class="center">
 
 {% include "_include/home-card.html" %}
 
@@ -57,61 +65,11 @@
 
 			</div>
 
-			<div class="home-we-build">
+{% include "_include/home-we-build.html" %}
 
-				<h2 class="h1">
-					Yes, We Can Build it
-				</h2>
+		</div>
 
-				<p>
-					Creating a great product is really hard work but you will  never be the same once you do it right
-				</p>
-
-				<ul>
-
-					<li>
-						<strong class="h3">
-							Design interfaces
-						</strong>
-						<p>
-							Creating a great product is really hard work but you will  never be the same once you do it right
-						</p>
-					</li>
-
-					<li>
-						<strong class="h3">
-							Website development
-						</strong>
-						<p>
-							Creating a great product is really hard work but you will  never be the same once you do it right
-						</p>
-					</li>
-
-					<li>
-						<strong class="h3">
-							Mobile applications
-						</strong>
-						<p>
-							Creating a great product is really hard work but you will  never be the same once you do it right
-						</p>
-					</li>
-
-					<li>
-						<strong class="h3">
-							Support and Development
-						</strong>
-						<p>
-							Creating a great product is really hard work but you will  never be the same once you do it right
-						</p>
-					</li>
-
-				</ul>
-
-			</div>
-
-		</article>
-
-	</div>
+	</article>
 
 {% include "_include/last-proects.html" %}
 

@@ -62,6 +62,18 @@
 		display: block;
 		margin-bottom: 16px;
 
+		span {
+
+			border-bottom: 1px solid color(var(--red) a(50%));
+
+		}
+
+	}
+
+	&__link:hover .h3 span {
+
+		border-bottom-color: var(--red);
+
 	}
 
 	p {
