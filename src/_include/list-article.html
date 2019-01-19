@@ -1,0 +1,63 @@
+	<aside class="list-article">
+
+		<div class="center">
+
+			<ul class="list-article__box">
+
+{% for item in list %}
+
+				<li class="list-article__item">
+
+					<a href="{{ item.link }}" class="list-article__link">
+
+						<span class="list-article__img list-article__img--{{ item.img }}">
+
+							<picture>
+
+								<source srcset="/img/blog/preview/{{ item.img }}@1x.webp 1x, /img/blog/preview/{{ item.img }}@2x.webp 2x" type="image/webp">
+
+								<source srcset="/img/blog/preview/{{ item.img }}@1x.jpg 1x, /img/blog/preview/{{ item.img }}@2x.jpg 2x">
+
+								<img src="/img/blog/preview/{{ item.img }}@1x.jpg" alt="{{ item.title | striptags(true) | escape | nl2br }}">
+
+							</picture>
+
+						</span>
+
+						<p>
+
+							<strong class="h4">
+
+								<span>
+									{{ item.title | safe }}
+								</span>
+
+							</strong>
+
+							{{ item.text }}
+
+						</p>
+
+					</a>
+
+				</li>
+
+{% endfor %}
+
+			</ul>
+
+		</div>
+
+{% if btnLoading %}
+
+		<div class="list-article__foot">
+
+			<a href="?pagin=2" class="list-article__next-page">
+				loading
+			</a>
+
+		</div>
+
+{% endif %}
+
+	</aside>

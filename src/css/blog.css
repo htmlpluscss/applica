@@ -1,139 +1,34 @@
-.header-blog {
+.blog {
 
-	margin-top: 40px;
+	&__header {
 
-	&__img {
+		margin: 19px 0;
+		text-align: center;
 
-		position: relative;
-		margin: 42px auto;
-		max-width: 100%;
-		width: 960px;
+		p {
 
-		.tags {
-
-			position: absolute;
-			top: 30px;
-			left: 30px;
-
-			@media ($smWidth) {
-
-				top: 10px;
-				left: 10px;
-
-			}
-
-		}
-
-		img {
-
-			position: relative;
-			border-radius: 20px;
-			display: block;
-			max-width: 100%;
-
-			@media ($smWidth) {
-
-				border-radius: 0;
-				margin-left: calc(var(--borderPage) * -1);
-				margin-right: calc(var(--borderPage) * -1);
-				max-width: calc(100% + calc(var(--borderPage) * 2));
-
-			}
+			max-width: 670px;
+			font-family: OpenSans;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 30px;
+			color: var(--text);
+			margin: 30px auto;
 
 		}
 
 	}
 
-	&__stat {
+	&__filter {
 
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 33px 0 83px;
 
-		&-count {
+		li {
 
-			font-size: 13px;
-			line-height: 20px;
-			font-weight: 600;
-			color: var(--light);
-			display: block;
-			position: relative;
-			padding-left: 28px;
-
-			&::before {
-
-				top: -2px;
-				left: 0;
-				width: 25px;
-				height: 25px;
-				outline:1px solid red;
-				position: absolute;
-				background: url(https://centrofinans.ru/bitrix/templates/centrofinans/images/sprite.svg) -411px -236px;
-				content: '';
-
-			}
-
-		}
-
-		&-like {
-
-			margin-right: 24px;
-
-		}
-
-	}
-
-	&__head {
-
-		display: flex;
-		font-size: 13px;
-		line-height: 20px;
-		font-weight: 600;
-		color: var(--light);
-		margin: 16px 0;
-
-		@media ($smWidth) {
-
-			display: block;
-
-		}
-
-	}
-
-	&__date {
-
-		padding: 0 50px 0 28px;
-		position: relative;
-
-		&::before {
-
-			top: -2px;
-			left: 0;
-			width: 25px;
-			height: 25px;
-			outline:1px solid red;
-			position: absolute;
-			background: url(https://centrofinans.ru/bitrix/templates/centrofinans/images/sprite.svg) -411px -236px;
-			content: '';
-
-			@media ($smWidth) {
-
-				background: url(https://centrofinans.ru/bitrix/templates/centrofinans/images/sprite_320.svg) -16px -408px;
-
-			}
-
-		}
-
-	}
-
-	&__intro {
-
-		margin: 26px 0;
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 25px;
-
-		@media ($smWidth) {
-
-			margin: 14px 0;
+			margin: 7px;
 
 		}
 

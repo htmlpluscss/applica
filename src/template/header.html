@@ -81,7 +81,7 @@
 
 					{% endif %}
 
-					<li class="{{ menuClassLi }}">
+					<li class="{{ menuClassLi }}{% if item.subMenuBegin %} menu__item--parent{% endif %}">
 
 						<a  href="/{{item.link}}">
 							<span>{{ item.title }}</span>

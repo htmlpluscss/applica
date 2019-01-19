@@ -1,17 +1,78 @@
 .contacts {
 
-	display: flex;
+	.h2 {
+
+		margin: 7px 0 40px;
+
+	}
+
+	&__box {
+
+		display: flex;
+		padding-bottom: 90px;
+
+	}
 
 	&__text {
 
 		width: 555px;
-		outline:1px solid red;
+
+		p {
+
+			font-family: OpenSans;
+			font-size: 18px;
+			line-height: 28px;
+			font-weight: 300;
+			color: #6b6b6b;
+			margin: 25px 0 18px;
+
+		}
+
+	}
+
+	&__tel,
+	&__mail {
+
+		font-family: OpenSans;
+		font-size: 22px;
+		line-height: 28px;
+		font-weight: 600;
+		color: var(--bg);
+		display: inline-block;
+		margin-bottom: 20px;
+
+	}
+
+	&__mail {
+
+		color: var(--red);
+		margin-bottom: 38px;
+		border-bottom: 1px solid color(var(--red) a(35%));
+
+		&:hover {
+
+			border-bottom-color: var(--red);
+
+		}
 
 	}
 
 	&__form {
 
 		width: 476px;
+		margin: 2px 0;
+
+		.input {
+
+			margin-bottom: 4px;
+
+		}
+
+		.btn {
+
+			margin-top: 60px;
+
+		}
 
 	}
 

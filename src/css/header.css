@@ -113,7 +113,25 @@
 
 	&__item {
 
-		background-color: #fff;
+		&--parent {
+
+			background-color: #fff;
+
+			&::after {
+
+				position: absolute;
+				width: 7px;
+				height: 2px;
+				top: 50%;
+				right: 8px;
+				margin-top: -2px;
+				content: '';
+				border-top: 1px solid #838383;
+				border-bottom: 1px solid #838383;
+
+			}
+
+		}
 
 		& > a {
 

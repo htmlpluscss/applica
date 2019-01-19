@@ -8,69 +8,73 @@
 
 	<article class="contacts center">
 
-		<div class="contacts__text">
+		<h1 class="h2">
+			Contacts Us
+		</h1>
 
-			<h1 class="h2">
-				Contacts Us
-			</h1>
+		<div class="contacts__box">
 
-			<p>
-				The easiest way is to call the phone right now
-			</p>
+			<div class="contacts__text">
 
-			<a href="tel:+380664909300" class="contacts__tel">
-				+38 (066) 490 93 00
-			</a>
+				<p>
+					The easiest way is to call the phone right now
+				</p>
 
-			<p>
-				If you love correspondence, our email
-			</p>
+				<a href="tel:+380664909300" class="contacts__tel">
+					+38 (066) 490 93 00
+				</a>
 
-			<a href="mailto:hello@applica.com.ua" class="contacts__mail">
-				hello@applica.com.ua
-			</a>
+				<p>
+					If you love correspondence, our email
+				</p>
 
-			<ul class="social">
+				<a href="mailto:hello@applica.com.ua" class="contacts__mail">
+					hello@applica.com.ua
+				</a>
 
-				<li class="social__item">
-					<a class="social__link social__link--vk" href="" target="_blank" rel="nofollow">
-						VK
-					</a>
-				</li>
+				<ul class="social">
 
-				<li class="social__item">
-					<a class="social__link social__link--facebook" href="" target="_blank" rel="nofollow">
-						Facebook
-					</a>
-				</li>
+					<li class="social__item">
+						<a class="social__link social__link--vk" href="" target="_blank" rel="nofollow">
+							VK
+						</a>
+					</li>
 
-				<li class="social__item">
-					<a class="social__link social__link--instagram" href="" target="_blank" rel="nofollow">
-						Instagram
-					</a>
-				</li>
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="" target="_blank" rel="nofollow">
+							Facebook
+						</a>
+					</li>
 
-			</ul>
+					<li class="social__item">
+						<a class="social__link social__link--instagram" href="" target="_blank" rel="nofollow">
+							Instagram
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<form action="/mail.php" class="contacts__form" novalidate="novalidate">
+
+				<input name="name" class="input" placeholder="Name">
+				<input name="phone" class="input" placeholder="Telephone" type="tel">
+				<textarea name="message" class="input" placeholder="Message"></textarea>
+
+				<button class="btn btn--arrow">
+					Send
+					<svg width="19" height="13" viewBox="0 0 19 13">
+						<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
+							<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
+							<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
+						</g>
+					</svg>
+				</button>
+
+			</form>
 
 		</div>
-
-		<form action="/mail.php" class="contacts__form" novalidate="novalidate">
-
-			<input name="name" class="input" placeholder="Name">
-			<input name="phone" class="input" placeholder="Telephone" type="tel">
-			<textarea name="message" class="input" placeholder="Message"></textarea>
-
-			<button class="btn btn--arrow">
-				Send
-				<svg width="19" height="13" viewBox="0 0 19 13">
-					<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
-						<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
-						<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
-					</g>
-				</svg>
-			</button>
-
-		</form>
 
 	</article>
 

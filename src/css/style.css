@@ -5,17 +5,18 @@
 @import url(form.css);
 
 @import url(header.css);
-@import url(footer.css);
 
 @import url(home-top.css);
 @import url(home-card.css);
 @import url(home-applications.css);
 @import url(home-we-build.css);
-@import url(last-proects.css);
+@import url(list-article.css);
 @import url(our-clients.css);
+@import url(request.css);
 
 @import url(social.css);
 @import url(contacts.css);
+@import url(blog.css);
 /*
 
 @import url(modal.css);
@@ -24,7 +25,6 @@
 
 
 @import url(news.css);
-@import url(blog.css);
 @import url(article.css);
 
  */
