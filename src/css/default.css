@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/* color: red !important; */
+color: red !important;
 
 }
 
@@ -32,7 +32,7 @@ body {
 	flex-direction: column;
 	overflow-y: scroll;
 
- 	/* background-image: url(/css/index.png); */
+ 	background-image: url(/css/contacts.png);
  	background-size: 1440px auto;
 	background-position: center 0;
 
@@ -85,7 +85,7 @@ a {
 ::selection {
 
 	color: #fff;
-	background: var(--color);
+	background: #f8e71c;
 
 }
 
@@ -120,13 +120,21 @@ svg {
 
 .h2 {
 
+	font-size: 42px;
+	line-height: 50px;
+	font-weight: 700;
+
+}
+
+.h3 {
+
 	font-size: 30px;
 	line-height: 45px;
 	font-weight: 700;
 
 }
 
-.h3 {
+.h4 {
 
 	font-size: 18px;
 	line-height: 29px;

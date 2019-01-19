@@ -69,7 +69,13 @@
 
 					{% if item.subMenuEnd %}
 
-						</ul>
+							</ul>
+
+						</div>
+
+						<span class="menu__sub-bg menu__sub-tl"></span>
+						<span class="menu__sub-bg menu__sub-t"></span>
+						<span class="menu__sub-bg menu__sub-rc"></span>
 
 {% set menuClassLi = "menu__item" %}
 
@@ -85,7 +91,17 @@
 
 {% set menuClassLi = "menu__sub-item" %}
 
-						<ul class="menu__sub">
+						<div class="menu__sub">
+
+							<span class="menu__sub-bg menu__sub-tc"></span>
+							<span class="menu__sub-bg menu__sub-tr"></span>
+							<span class="menu__sub-bg menu__sub-r"></span>
+							<span class="menu__sub-bg menu__sub-br"></span>
+							<span class="menu__sub-bg menu__sub-bc"></span>
+							<span class="menu__sub-bg menu__sub-bl"></span>
+							<span class="menu__sub-bg menu__sub-l"></span>
+
+							<ul class="menu__sub-list">
 
 						{% endif %}
 
@@ -108,10 +124,10 @@
 
 			</nav>
 
-			<button type="button" class="header__btn btn btn--big">
+			<button type="button" class="header__btn btn btn--arrow">
 				Get started
 				<svg width="19" height="13" viewBox="0 0 19 13">
-					<g fill="none"stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
+					<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
 						<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
 						<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
 					</g>

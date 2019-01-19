@@ -1,0 +1,43 @@
+.social  {
+
+	margin: 40px 0;
+
+	a {
+
+		display: block;
+		width: 125px;
+		border-radius: 18px;
+		position: relative;
+		padding-left: 36px;
+		color: #fff;
+		height: 35px;
+		line-height: 33px;
+		font-weight: 300;
+
+		a:hover {
+
+			opacity: .9;
+
+		}
+
+	}
+
+	&__vk {
+
+		background-color: #45668e;
+
+	}
+
+	&__facebook {
+
+		background-color: #3c5897;
+
+	}
+
+	&__instagram {
+
+		background-color: #56acee;
+
+	}
+
+}

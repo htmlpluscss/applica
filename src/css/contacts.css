@@ -1,0 +1,19 @@
+.contacts {
+
+	display: flex;
+
+	&__text {
+
+		width: 555px;
+		outline:1px solid red;
+
+	}
+
+	&__form {
+
+		width: 476px;
+
+	}
+
+
+}
