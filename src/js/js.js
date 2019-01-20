@@ -36,4 +36,11 @@ var APPLICA = {};
 
 	});
 
+	APPLICA.isInViewport = function(element) {
+		var rect = element.getBoundingClientRect();
+		return (
+			rect.top >= 0 && rect.bottom <= APPLICA.height
+		);
+	}
+
 })();

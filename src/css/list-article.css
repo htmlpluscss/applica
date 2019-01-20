@@ -39,24 +39,6 @@
 		justify-content: center;
 		align-items: flex-end;
 
-		&--1 {
-
-			background-color: #fff;
-
-		}
-
-		&--2 {
-
-			background-color: #ecf2ff;
-
-		}
-
-		&--3 {
-
-			background-color: #007aff;
-
-		}
-
 	}
 
 	.h4 {
@@ -104,18 +86,42 @@
 		color: #fff;
 		text-transform: uppercase;
 
-		&::before {
+		svg {
 
-			width: 24px;
-			height: 24px;
 			display: block;
 			margin: 8px auto;
 			content: '';
-			outline:1px solid red;
+			fill: #fff;
+			animation: loading 1s linear infinite;
+			animation-play-state: paused;
+
+
+		}
+
+		&.is-active {
+
+			opacity: 0.8;
+
+			svg {
+
+				animation-play-state: running;
+
+			}
 
 		}
 
 
 	}
 
+}
+
+
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
