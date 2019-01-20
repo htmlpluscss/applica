@@ -14,26 +14,26 @@ Plus, наиболее заметное отличие которых от пр�
 
 			<header class="article__header">
 
-				<h1 class="h1">
+				<h1 class="h1 article__center">
 					{{ title }}
 				</h1>
 
 				<picture>
 
-					<source srcset="/img/blog.webp 1x, /img/blog@2x.webp 2x" type="image/webp">
-					<source srcset="/img/blog.png 1x, /img/blog@2x.png 2x">
+					<source srcset="/img/blog/1@1x.webp 1x, /img/blog/1@2x.webp 2x" type="image/webp">
+					<source srcset="/img/blog/1@1x.png 1x, /img/blog/1@2x.png 2x">
 
-					<img src="/img/blog.png" alt="">
+					<img src="/img/blog/1@1x.png" alt="">
 
 				</picture>
 
-				<p>
+				<p class="article__center">
 					{{ description }}
 				</p>
 
 			</header>
 
-			<div class="article__body">
+			<div class="article__body article__center">
 
 				<p>
 					Apple не выпускала айфоны в стеклянном корпусе с 2011 года. Алюминиевый корпус, появившийся в iPhone 5, показал себя как более прочный и долговечный, но мешал внедрению беспроводной зарядки. С началом продаж iPhone 8 тестеры и видеоблогеры по всему миру стали проверять, как новый смартфон ведёт себя при падении. В роликах iPhone 8 иногда сравнивают с Samsung Galaxy S8 или Note 8 — у них тоже стеклянный корпус, и корейские смартфоны позиционируются как прямые конкуренты новой линейке от Apple.
@@ -41,10 +41,10 @@ Plus, наиболее заметное отличие которых от пр�
 
 				<picture>
 
-					<source srcset="/img/blog.webp 1x, /img/blog@2x.webp 2x" type="image/webp">
-					<source srcset="/img/blog.png 1x, /img/blog@2x.png 2x">
+					<source srcset="/img/blog/2@1x.webp 1x, /img/blog/2@2x.webp 2x" type="image/webp">
+					<source srcset="/img/blog/2@1x.png 1x, /img/blog/2@2x.png 2x">
 
-					<img src="/img/blog.png" alt="">
+					<img src="/img/blog/2@1x.png" alt="">
 
 				</picture>
 
@@ -102,32 +102,9 @@ Plus, наиболее заметное отличие которых от пр�
 
 			</div>
 
-			<footer class="article__footer">
+			<footer class="article__footer article__center">
 
-				<ul class="social-btns">
-
-					<li class="social-btns__item">
-						<a class="social-btns__vk" href="" target="_blank" rel="nofollow">
-							Поделиться ВКонтакте
-						</a>
-					</li>
-					<li class="social-btns__item">
-						<a class="social-btns__facebook" href="" target="_blank" rel="nofollow">
-							Поделиться FaceBook
-						</a>
-					</li>
-					<li class="social-btns__item">
-						<a class="social-btns__twitter" href="" target="_blank" rel="nofollow">
-							Твитнуть
-						</a>
-					</li>
-					<li class="social-btns__item">
-						<a class="social-btns__ok" href="" target="_blank" rel="nofollow">
-							Поделиться в одноклассниках
-						</a>
-					</li>
-
-				</ul>
+{% include "_include/social-sharing.html" %}
 
 			</footer>
 

@@ -1,0 +1,51 @@
+.social-sharing {
+
+	margin: 20px -10px;
+	display: flex;
+
+	&__item {
+
+		margin: 10px;
+
+	}
+
+	&__link {
+
+		width: 120px;
+		height: 70px;
+		border-radius: 6px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		fill: #fff;
+		font-size: 0;
+		color: transparent;
+		line-height: 0;
+
+	}
+
+	&__vk {
+
+		background-color: #45668e;
+
+	}
+
+	&__facebook {
+
+		background-color: #3c5897;
+
+	}
+
+	&__telegram {
+
+		background-color: #159cde;
+
+	}
+
+	&__ok {
+
+		background-color: #ed8209;
+
+	}
+
+}
