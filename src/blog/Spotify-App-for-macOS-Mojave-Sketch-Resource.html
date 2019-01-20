@@ -1,0 +1,161 @@
+{% set title = "Spotify App for macOS Mojave Sketch Resource" %}
+
+{% set description = "22 сентября в странах первой волны начались продажи iPhone 8 и iPhone 8
+Plus, наиболее заметное отличие которых от предыдущего поколения —
+стеклянный корпус. В России продавать их начнут лишь спустя неделю." %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<article class="article">
+
+		<div class="center">
+
+			<header class="article__header">
+
+				<h1 class="h1">
+					{{ title }}
+				</h1>
+
+				<picture>
+
+					<source srcset="/img/blog.webp 1x, /img/blog@2x.webp 2x" type="image/webp">
+					<source srcset="/img/blog.png 1x, /img/blog@2x.png 2x">
+
+					<img src="/img/blog.png" alt="">
+
+				</picture>
+
+				<p>
+					{{ description }}
+				</p>
+
+			</header>
+
+			<div class="article__body">
+
+				<p>
+					Apple не выпускала айфоны в стеклянном корпусе с 2011 года. Алюминиевый корпус, появившийся в iPhone 5, показал себя как более прочный и долговечный, но мешал внедрению беспроводной зарядки. С началом продаж iPhone 8 тестеры и видеоблогеры по всему миру стали проверять, как новый смартфон ведёт себя при падении. В роликах iPhone 8 иногда сравнивают с Samsung Galaxy S8 или Note 8 — у них тоже стеклянный корпус, и корейские смартфоны позиционируются как прямые конкуренты новой линейке от Apple.
+				</p>
+
+				<picture>
+
+					<source srcset="/img/blog.webp 1x, /img/blog@2x.webp 2x" type="image/webp">
+					<source srcset="/img/blog.png 1x, /img/blog@2x.png 2x">
+
+					<img src="/img/blog.png" alt="">
+
+				</picture>
+
+				<h2>
+					Маркированный список
+				</h2>
+
+				<p>
+					Автор видеоблога JerryRigEverything сравнивал эффект от падения двух iPhone 8 на бетон: одного без защиты, а второго в пластиковом кейсе:
+				</p>
+
+				<ul>
+					<li>
+						Первые два падения почти не повредили оба смартфона
+					</li>
+					<li>
+						В третий раз у iPhone 8 без кейса треснул экран
+					</li>
+					<li>
+						В четвёртый пошла сильная трещина по задней крышке.
+					</li>
+				</ul>
+
+				<h3>
+					Нумерованный список
+				</h3>
+
+				<p>
+					Автор видеоблога JerryRigEverything сравнивал эффект от падения двух iPhone 8 на бетон: одного без защиты, а второго в пластиковом кейсе:
+				</p>
+
+				<ol>
+					<li>
+						Первые два падения почти не повредили оба смартфона
+					</li>
+					<li>
+						В третий раз у iPhone 8 без кейса треснул экран
+					</li>
+					<li>
+						В четвёртый пошла сильная трещина по задней крышке.
+					</li>
+				</ol>
+
+				<h3>
+					Заключение от iFixit
+				</h3>
+
+				<p>
+					Автор видеоблога JerryRigEverything сравнивал эффект от падения двух iPhone 8 на бетон: одного без защиты, а второго в пластиковом кейсе. Первые два падения почти не повредили оба смартфона, в третий раз у iPhone 8 без кейса треснул экран, а в четвёртый пошла сильная трещина по задней крышке. Смартфон в кейсе пережил все падения благополучно, даже когда его бросили с вытянутой над головой руки.
+				</p>
+
+				<p>
+					Изучение iPhone 8 экспертами из известного сервиса iFixit показало, что для ремонта стеклянной крышки нового смартфона (которая, судя по тестам, оказалась наименее удароустойчивой) потребуется полностью разбирать смартфон. Проблема в том, что компоненты на самом «дне» iPhone 8 уложены так плотно и сложно, что не всякий ремонтник сможет собрать их обратно. iFixit поставил iPhone 8 всего шесть баллов в рейтинге ремонтопригодности — это меньше, чем у iPhone 7/ 7 Plus, iPhone 6s/6s Plus и iPhone 6/6 Plus (у всех по семь баллов).
+				</p>
+
+			</div>
+
+			<footer class="article__footer">
+
+				<ul class="social-btns">
+
+					<li class="social-btns__item">
+						<a class="social-btns__vk" href="" target="_blank" rel="nofollow">
+							Поделиться ВКонтакте
+						</a>
+					</li>
+					<li class="social-btns__item">
+						<a class="social-btns__facebook" href="" target="_blank" rel="nofollow">
+							Поделиться FaceBook
+						</a>
+					</li>
+					<li class="social-btns__item">
+						<a class="social-btns__twitter" href="" target="_blank" rel="nofollow">
+							Твитнуть
+						</a>
+					</li>
+					<li class="social-btns__item">
+						<a class="social-btns__ok" href="" target="_blank" rel="nofollow">
+							Поделиться в одноклассниках
+						</a>
+					</li>
+
+				</ul>
+
+			</footer>
+
+		</div>
+
+	</article>
+
+{% set list = [
+	{
+		title: "How to write the right letter to  the development studio",
+		link: "",
+		img: "1",
+		text: "What to write about yourself and your  project in the first letter, so that the  studio does not pass by?"
+	},
+	{
+		title: "Design Lynch: a new version  of&nbsp;Skype",
+		link: "",
+		img: "2",
+		text: "Paper 53, Tayasui Sketches, Procreate  and Medibang Paint - what to choose?  Designer&apos;s opinion"
+	},
+	{
+		title: "Digest of the Internet of  things: October 2017",
+		link: "",
+		img: "3",
+		text: "We run it reluctantly, but we can not  do without it yet - Skype, now in a new  design. Comparing with the…"
+	}
+] %}
+
+{% include "_include/list-article.html" %}
+
+{% endblock %}
