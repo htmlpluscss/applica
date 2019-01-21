@@ -4,7 +4,7 @@
 	position: relative;
 	-webkit-overflow-scrolling: touch;
 	display: flex;
-	background-color: #fff;
+	background-color: var(--bg);
 
 	&__item {
 
@@ -34,7 +34,12 @@
 		font-size: 0;
 		color: transparent;
 		outline:1px solid red;
-		background: url(/images/sprite.svg) -16px -72px;
+
+	}
+
+	.form {
+
+		margin: auto;
 
 	}
 

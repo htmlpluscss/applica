@@ -88,23 +88,23 @@
 
 	background-color: transparent;
 	border: 0;
-	padding: 0;
+	padding: 26px 0;
 
 	width: 100%;
 	font-family: inherit;
 	position: relative;
 	-webkit-appearance: none;
 	display: block;
-	border-bottom: 1px solid #e6e6e6;
-	font-size: 14px;
-	font-weight: bold;
 	color: var(--bg);
-	text-transform: uppercase;
+	font-family: OpenSans;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 28px;
 
 	&--error {
 
-		border-color: var(--red);
-		box-shadow: 0 0 0 1px var(--red);
+		color: var(--red);
+		border-bottom-color: var(--red);
 
 	}
 
@@ -113,7 +113,6 @@
 		resize: none;
 		height: 146px;
 		overflow: auto;
-		padding: 32px 0;
 
 	}
 
@@ -146,6 +145,63 @@
 	&:focus {
 
 		outline: none;
+
+	}
+
+}
+
+.form {
+
+	width: 476px;
+
+	.btn {
+
+		margin-top: 60px;
+
+	}
+
+}
+
+.input-box {
+
+	display: flex;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 4px;
+
+	&__label {
+
+		width: 116px;
+		height: 80px;
+		line-height: 80px;
+		flex-shrink: 0;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+
+	}
+
+	.input {
+
+		width: 100%;
+		top: 1px;
+
+		&:focus {
+
+			border-bottom: 1px solid var(--color);
+
+		}
+
+	}
+
+	&--textarea {
+
+		display: block;
+
+	}
+
+	&--textarea  &__label {
+
+		border-bottom: 0;
 
 	}
 

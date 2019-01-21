@@ -56,11 +56,30 @@
 
 			</div>
 
-			<form action="/mail.php" class="contacts__form" novalidate="novalidate">
+			<form action="/mail.php" class="contacts__form form" novalidate="novalidate">
 
-				<input name="name" class="input" placeholder="Name">
-				<input name="phone" class="input" placeholder="Telephone" type="tel">
-				<textarea name="message" class="input" placeholder="Message"></textarea>
+				<input name="subject" type="hidden" value="Contacts Us">
+
+				<div class="input-box">
+					<label class="input-box__label" for="name">
+						Name
+					</label>
+					<input name="name" class="input" id="name">
+				</div>
+
+				<div class="input-box" data-error="Fill in all fields correctly">
+					<label class="input-box__label" for="phone">
+						Telephone
+					</label>
+					<input name="phone" class="input input--error" type="tel" id="phone">
+				</div>
+
+				<div class="input-box">
+					<label class="input-box__label" for="message">
+						Message
+					</label>
+					<textarea name="message" class="input" id="message"></textarea>
+				</div>
 
 				<button class="btn btn--arrow">
 					Send

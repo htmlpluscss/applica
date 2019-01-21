@@ -59,22 +59,8 @@
 
 	&__form {
 
-		width: 476px;
 		margin: 2px 0;
 
-		.input {
-
-			margin-bottom: 4px;
-
-		}
-
-		.btn {
-
-			margin-top: 60px;
-
-		}
-
 	}
-
 
 }
