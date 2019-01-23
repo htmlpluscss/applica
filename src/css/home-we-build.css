@@ -2,9 +2,22 @@
 
 	padding: 0 0 141px;
 
+	@media ($smWidth) {
+
+		padding: 0 0 16px;
+
+	}
+
 	.h1 {
 
 		margin-bottom: 20px;
+
+		@media ($smWidth) {
+
+			font-size: 24px;
+			margin-bottom: 14px;
+
+		}
 
 	}
 
@@ -17,6 +30,14 @@
 		color: var(--text);
 		max-width: 530px;
 
+		@media ($smWidth) {
+
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 1.6;
+
+		}
+
 	}
 
 	ul {
@@ -26,6 +47,13 @@
 		margin-top: 8px;
 		justify-content: space-between;
 
+		@media ($smWidth) {
+
+			display: block;
+			margin-top: 35px;
+
+		}
+
 	}
 
 	li {
@@ -33,12 +61,30 @@
 		width: 575px;
 		padding: 55px 20px 0 65px;
 
+		@media ($smWidth) {
+
+			width: auto;
+			padding: 0 0 34px;
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 1.6;
+
+		}
+
 	}
 
 	.h4 {
 
 		margin-bottom: 14px;
 		display: block;
+
+		@media ($smWidth) {
+
+			height: 40px;
+			padding: 9px 0 0 60px;
+			margin-bottom: 13px;
+
+		}
 
 	}
 
@@ -56,6 +102,12 @@
 		align-items: center;
 		fill: #fff;
 		border-radius: 4px;
+
+		@media ($smWidth) {
+
+			top: 0;
+
+		}
 
 		&--red {
 

@@ -5,6 +5,14 @@
 	text-align: center;
 	background-color: var(--bg);
 
+	@media ($smWidth) {
+
+		padding: 55px 0 60px;
+		margin-left: -20px;
+		margin-right: -20px;
+
+	}
+
 	&__head {
 
 		font-family: OpenSans;
@@ -13,6 +21,13 @@
 		line-height: 30px;
 		color: #fff;
 		margin-bottom: 12px;
+
+		@media ($smWidth) {
+
+			font-size: 15px;
+			margin-bottom: 12px;
+
+		}
 
 	}
 
@@ -23,6 +38,14 @@
 		font-weight: bold;
 		color: #fff;
 		border-bottom: 3px solid var(--red);
+
+		@media ($smWidth) {
+
+			font-size: 30px;
+			height: 36px;
+			border-bottom-width: 2px;
+
+		}
 
 		&:hover {
 

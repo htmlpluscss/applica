@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-color: red !important;
+/* color: red !important; */
 
 }
 
@@ -13,8 +13,6 @@ html {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-
-color: red !important;
 
 }
 
@@ -34,10 +32,10 @@ body {
 	flex-direction: column;
 	overflow-y: scroll;
 
- 	 background-image: url(/css/index-360.png);
- 	background-size: 360px auto;
-	width: 360px;
-
+/* background-image: url(/css/index-360.png);
+	 	background-size: 360px auto;
+		width: 360px;
+	 */
 	/* IE10+ CSS styles go here */
 	@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
@@ -148,6 +146,13 @@ svg {
 	line-height: 45px;
 	font-weight: 700;
 
+	@media ($smWidth) {
+
+		font-size: 24px;
+		line-height: 28px;
+
+	}
+
 }
 
 .h4 {
@@ -155,6 +160,13 @@ svg {
 	font-size: 18px;
 	line-height: 29px;
 	font-weight: 700;
+
+	@media ($smWidth) {
+
+		font-size: 16px;
+		line-height: 24px;
+
+	}
 
 }
 

@@ -74,6 +74,12 @@
 
 	}
 
+	.br-sm {
+
+		display: block;
+
+	}
+
 }
 
 @media ($xsWidth) {
@@ -87,6 +93,12 @@
 	.visible-xs {
 
 		display: block;
+
+	}
+
+	.br-sm {
+
+		display: none;
 
 	}
 
