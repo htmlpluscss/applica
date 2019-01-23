@@ -14,11 +14,13 @@
 
 							<picture>
 
-								<source srcset="/img/blog/preview/{{ item.img }}@1x.webp 1x, /img/blog/preview/{{ item.img }}@2x.webp 2x" type="image/webp">
+								<source srcset="/img/blog/preview/{{ item.img }}--680@1x.webp 1x, /img/blog/preview/{{ item.img }}--680@2x.webp 2x" type="image/webp" media="(max-width: 767px) and (min-width: 361px)">
+								<source srcset="/img/blog/preview/{{ item.img }}--340@1x.webp 1x, /img/blog/preview/{{ item.img }}--340@2x.webp 2x" type="image/webp">
 
-								<source srcset="/img/blog/preview/{{ item.img }}@1x.jpg 1x, /img/blog/preview/{{ item.img }}@2x.jpg 2x">
+								<source srcset="/img/blog/preview/{{ item.img }}--680@1x.jpg 1x, /img/blog/preview/{{ item.img }}--680@2x.jpg 2x" media="(max-width: 767px) and (min-width: 361px)">
+								<source srcset="/img/blog/preview/{{ item.img }}--340@1x.jpg 1x, /img/blog/preview/{{ item.img }}--340@2x.jpg 2x">
 
-								<img src="/img/blog/preview/{{ item.img }}@1x.jpg" alt="{{ item.title | striptags(true) | escape | nl2br }}">
+								<img src="/img/blog/preview/{{ item.img }}--340@1x.jpg" alt="{{ item.title | striptags(true) | escape | nl2br }}">
 
 							</picture>
 

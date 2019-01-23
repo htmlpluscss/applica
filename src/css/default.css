@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/* color: red !important; */
+color: red !important;
 
 }
 
@@ -34,7 +34,7 @@ body {
 	flex-direction: column;
 	overflow-y: scroll;
 
- 	 /* background-image: url(/css/index-360.png); */
+ 	 background-image: url(/css/index-360.png);
  	background-size: 360px auto;
 	width: 360px;
 
@@ -118,6 +118,13 @@ svg {
 	line-height: 60px;
 	font-weight: 700;
 
+	@media ($smWidth) {
+
+		font-size: 23px;
+		line-height: 33px;
+
+	}
+
 }
 
 .h2 {
@@ -129,7 +136,7 @@ svg {
 	@media ($smWidth) {
 
 		font-size: 23px;
-		line-height: 28px;
+		line-height: 33px;
 
 	}
 

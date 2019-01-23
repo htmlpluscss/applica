@@ -6,7 +6,7 @@
 
 		@media ($smWidth) {
 
-			margin: 20px 0 24px;
+			margin: 17px 0 22px;
 
 		}
 
@@ -17,7 +17,7 @@
 		display: flex;
 		padding-bottom: 90px;
 
-		@media ($smWidth) {
+		@media ($mdWidth) {
 
 			display: block;
 			padding-bottom: 40px;

@@ -10,6 +10,13 @@
 		align-items: center;
 		padding: 38px 0;
 
+		@media ($mdWidth) {
+
+			width: auto;
+			padding: 30px;
+
+		}
+
 		@media ($smWidth) {
 
 			padding: 20px 0;
@@ -23,11 +30,16 @@
 		margin-bottom: 3px;
 		margin-right: 18px;
 
+		@media ($mdWidth) {
+
+			margin-right: auto;
+
+		}
+
 		@media ($smWidth) {
 
 			margin-left: 20px;
 			margin-bottom: -6px;
-			margin-right: auto;
 
 		}
 
@@ -53,15 +65,21 @@
 		position: relative;
 		font-size: 0;
 		color: transparent;
-		margin: 0 4px;
+		margin-left: 30px;
+
+		@media ($smWidth) {
+
+			margin: 0 4px;
+
+		}
 
 		span,
 		&::after,
 		&::before {
 
 			position: absolute;
-			width: 18px;
-			height: 2px;
+			width: 36px;
+			height: 3px;
 			top: 0;
 			left: 0;
 			right: 0;
@@ -69,6 +87,13 @@
 			margin: auto;
 			background-color: var(--bg);
 			transition: .5s;
+
+			@media ($smWidth) {
+
+				width: 18px;
+				height: 2px;
+
+			}
 
 		}
 
@@ -80,8 +105,14 @@
 
 		&::after {
 
-			bottom: 10px;
+			bottom: 20px;
 			content: '';
+
+			@media ($smWidth) {
+
+				bottom: 10px;
+
+			}
 
 			.menu-show & {
 
@@ -95,8 +126,14 @@
 
 		&::before {
 
-			top: 10px;
+			top: 20px;
 			content: '';
+
+			@media ($smWidth) {
+
+				top: 10px;
+
+			}
 
 			.menu-show & {
 

@@ -258,12 +258,18 @@
 
 	.input {
 
-		width: 100%;
+		width: calc(100% - 116px);
 		top: 1px;
 
 		&:focus {
 
 			border-bottom: 1px solid var(--color);
+
+		}
+
+		@media ($mdWidth) {
+
+			width: calc(100% - 100px);
 
 		}
 
@@ -283,7 +289,7 @@
 			position: absolute;
 			top: 60px;
 			left: 116px;
-			width: 100%;
+			right: 0;
 			content: attr(data-error);
 			font-size: 12px;
 			font-weight: 300;
