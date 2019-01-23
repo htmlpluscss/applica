@@ -153,10 +153,36 @@
 .form {
 
 	width: 476px;
+	position: relative;
 
 	.btn {
 
 		margin-top: 60px;
+
+	}
+
+	&--ok &__box {
+
+		pointer-events: none;
+		opacity: 0;
+
+	}
+
+	&--ok::after {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: attr(data-ok);
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 
 	}
 
@@ -167,6 +193,7 @@
 	display: flex;
 	border-bottom: 1px solid #e6e6e6;
 	margin-bottom: 4px;
+	position: relative;
 
 	&__label {
 
@@ -188,6 +215,31 @@
 		&:focus {
 
 			border-bottom: 1px solid var(--color);
+
+		}
+
+	}
+
+	&--error {
+
+		.input {
+
+			color: var(--red);
+			border-bottom: 1px solid var(--red) !important;
+
+		}
+
+		&[data-error]::after {
+
+			position: absolute;
+			top: 60px;
+			left: 116px;
+			width: 100%;
+			content: attr(data-error);
+			font-size: 12px;
+			font-weight: 300;
+			line-height: 16px;
+			color: var(--red);
 
 		}
 

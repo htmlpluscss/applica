@@ -56,40 +56,44 @@
 
 			</div>
 
-			<form action="/mail.php" class="contacts__form form" novalidate="novalidate">
+			<form action="/mail.php" class="contacts__form form" novalidate="novalidate" autocomplete="off" data-ok="Спасибо. В ближайшее время с вами свяжется наш менеджер.">
 
 				<input name="subject" type="hidden" value="Contacts Us">
 
-				<div class="input-box">
-					<label class="input-box__label" for="name">
-						Name
-					</label>
-					<input name="name" class="input" id="name">
-				</div>
+				<div class="form__box">
 
-				<div class="input-box" data-error="Fill in all fields correctly">
-					<label class="input-box__label" for="phone">
-						Telephone
-					</label>
-					<input name="phone" class="input input--error" type="tel" id="phone">
-				</div>
+					<div class="input-box">
+						<label class="input-box__label" for="name">
+							Name
+						</label>
+						<input name="name" class="input" id="name">
+					</div>
 
-				<div class="input-box">
-					<label class="input-box__label" for="message">
-						Message
-					</label>
-					<textarea name="message" class="input" id="message"></textarea>
-				</div>
+					<div class="input-box input-box--error" data-error="Fill in all fields correctly">
+						<label class="input-box__label" for="phone">
+							Telephone
+						</label>
+						<input name="phone" class="input" type="tel" id="phone" value="0 (50) 490-93-0">
+					</div>
 
-				<button class="btn btn--arrow">
-					Send
-					<svg width="19" height="13" viewBox="0 0 19 13">
-						<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
-							<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
-							<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
-						</g>
-					</svg>
-				</button>
+					<div class="input-box">
+						<label class="input-box__label" for="message">
+							Message
+						</label>
+						<textarea name="message" class="input" id="message"></textarea>
+					</div>
+
+					<button class="btn btn--arrow">
+						Send
+						<svg width="19" height="13" viewBox="0 0 19 13">
+							<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
+								<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
+								<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
+							</g>
+						</svg>
+					</button>
+
+				</div>
 
 			</form>
 

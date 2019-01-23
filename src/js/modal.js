@@ -4,7 +4,8 @@
 	var modal = document.querySelector('.modal'),
 		items = modal.querySelectorAll('.modal__item'),
 		close = modal.querySelectorAll('.modal__close'),
-		btns = document.querySelectorAll('[data-modal]');
+		btns = document.querySelectorAll('[data-modal]'),
+		wrapper = document.querySelector('.wrapper');
 
 	Array.prototype.forEach.call(close, function (el) {
 
@@ -21,17 +22,10 @@
 		modal.classList.add('hidden-visible');
 
 		APPLICA.body.classList.remove('modal-show');
-		APPLICA.wrapper.style.top = 0;
+		wrapper.style.top = 0;
 		window.scrollTo(0,APPLICA.windowScrollOld);
 
 		APPLICA.activeModal = false;
-
-		// clear video
-		if (document.getElementById('modal-video')){
-
-			document.getElementById('modal-video').innerHTML = '';
-
-		}
 
 	};
 
@@ -41,7 +35,7 @@
 
 			APPLICA.windowScrollOld = window.pageYOffset;
 
-			APPLICA.wrapper.style.top = -APPLICA.windowScrollOld + 'px';
+			wrapper.style.top = -APPLICA.windowScrollOld + 'px';
 
 		}
 

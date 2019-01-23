@@ -5,6 +5,9 @@
 	-webkit-overflow-scrolling: touch;
 	display: flex;
 	background-color: var(--bg);
+	z-index: 10;
+	color: #fff;
+	padding: 60px;
 
 	&__item {
 
@@ -27,19 +30,88 @@
 	&__close-btn {
 
 		position: absolute;
-		top: 12px;
-		right: 12px;
+		top: 47px;
+		right: 47px;
 		width: 40px;
 		height: 40px;
 		font-size: 0;
 		color: transparent;
-		outline:1px solid red;
+
+		&::after,
+		&::before {
+
+			position: absolute;
+			width: 24px;
+			height: 2px;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			margin: auto;
+			background-color: #fff;
+			transform: rotate(45deg);
+
+		}
+
+		&::before {
+
+			width: 2px;
+			height: 24px;
+
+		}
 
 	}
 
 	.form {
 
 		margin: auto;
+
+		.h1 {
+
+			margin-bottom: 28px;
+
+		}
+
+		.input-box {
+
+			border-bottom-color: color(#d8d8d8 a(30%));
+
+			.input {
+
+				color: #fff;
+
+				&:focus {
+
+					border-bottom-color: #d8d8d8;
+
+				}
+
+			}
+
+		}
+
+		&--ok {
+
+			margin: auto 0;
+			width: 100%;
+
+		}
+
+	}
+
+}
+
+.modal-show {
+
+	.wrapper {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
 
 	}
 

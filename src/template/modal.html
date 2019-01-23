@@ -2,25 +2,46 @@
 
 		<div class="modal__item modal__item--request hidden-visible">
 
-			<form action="/mail.php" class="form" novalidate="novalidate">
+			<form action="/mail.php" class="form" novalidate="novalidate" autocomplete="off" data-ok="Спасибо. В ближайшее время с вами свяжется наш менеджер.">
 
 				<input name="subject" type="hidden" value="Send a request">
 
-				<h3 class="h1">Send a request</h3>
+				<div class="form__box">
 
-				<input name="name" class="input" placeholder="Name">
-				<input name="phone" class="input" placeholder="Telephone" type="tel">
-				<textarea name="message" class="input" placeholder="Message"></textarea>
+					<h3 class="h1">Send a request</h3>
 
-				<button class="btn btn--arrow">
-					Send
-					<svg width="19" height="13" viewBox="0 0 19 13">
-						<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
-							<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
-							<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
-						</g>
-					</svg>
-				</button>
+					<div class="input-box">
+						<label class="input-box__label" for="modal-name">
+							Name
+						</label>
+						<input name="name" class="input" id="modal-name">
+					</div>
+
+					<div class="input-box" data-error="Fill in all fields correctly">
+						<label class="input-box__label" for="modal-phone">
+							Telephone
+						</label>
+						<input name="phone" class="input input--error" type="tel" id="modal-phone">
+					</div>
+
+					<div class="input-box">
+						<label class="input-box__label" for="modal-message">
+							Message
+						</label>
+						<textarea name="message" class="input" id="modal-message"></textarea>
+					</div>
+
+					<button class="btn btn--arrow">
+						Send
+						<svg width="19" height="13" viewBox="0 0 19 13">
+							<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
+								<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
+								<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
+							</g>
+						</svg>
+					</button>
+
+				</div>
 
 			</form>
 
