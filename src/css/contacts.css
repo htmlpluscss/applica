@@ -4,6 +4,12 @@
 
 		margin: 7px 0 40px;
 
+		@media ($smWidth) {
+
+			margin: 20px 0 24px;
+
+		}
+
 	}
 
 	&__box {
@@ -11,11 +17,19 @@
 		display: flex;
 		padding-bottom: 90px;
 
+		@media ($smWidth) {
+
+			display: block;
+			padding-bottom: 40px;
+
+		}
+
 	}
 
 	&__text {
 
 		width: 555px;
+		max-width: 100%;
 
 		p {
 
@@ -25,6 +39,15 @@
 			font-weight: 300;
 			color: #6b6b6b;
 			margin: 25px 0 18px;
+
+			@media ($smWidth) {
+
+				font-family: Roboto;
+				font-size: 15px;
+				line-height: 21px;
+				margin-bottom: 13px;
+
+			}
 
 		}
 
@@ -40,6 +63,16 @@
 		color: var(--bg);
 		display: inline-block;
 		margin-bottom: 20px;
+
+		@media ($smWidth) {
+
+			font-family: Roboto;
+			font-size: 21px;
+			font-weight: 500;
+			line-height: 22px;
+			margin-bottom: 16px;
+
+		}
 
 	}
 

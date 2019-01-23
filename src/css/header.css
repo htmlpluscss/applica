@@ -10,9 +10,9 @@
 		align-items: center;
 		padding: 38px 0;
 
-		@media ($mdWidth) {
+		@media ($smWidth) {
 
-			padding: 15px 5px;
+			padding: 20px 0;
 
 		}
 
@@ -20,14 +20,93 @@
 
 	&__logo {
 
-		fill: var(--bg);
 		margin-bottom: 3px;
 		margin-right: 18px;
 
+		@media ($smWidth) {
+
+			margin-left: 20px;
+			margin-bottom: -6px;
+			margin-right: auto;
+
+		}
+
+		svg {
+
+			fill: var(--bg);
+
+			@media ($smWidth) {
+
+				width: 79px;
+				height: 26px;
+
+			}
+
+		}
+
 	}
 
-	&__btn {
+	&__btn-menu-toggle {
 
+		width: 50px;
+		height: 50px;
+		position: relative;
+		font-size: 0;
+		color: transparent;
+		margin: 0 4px;
+
+		span,
+		&::after,
+		&::before {
+
+			position: absolute;
+			width: 18px;
+			height: 2px;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			background-color: var(--bg);
+			transition: .5s;
+
+		}
+
+		.menu-show & span {
+
+			width: 0;
+
+		}
+
+		&::after {
+
+			bottom: 10px;
+			content: '';
+
+			.menu-show & {
+
+				background-color: #fff;
+				transform: rotate(45deg);
+				bottom: 0;
+
+			}
+
+		}
+
+		&::before {
+
+			top: 10px;
+			content: '';
+
+			.menu-show & {
+
+				background-color: #fff;
+				transform: rotate(-45deg);
+				top: 0;
+
+			}
+
+		}
 
 	}
 
@@ -35,6 +114,12 @@
 
 		display: flex;
 		margin: auto;
+
+		@media ($mdWidth) {
+
+			display: none;
+
+		}
 
 	}
 

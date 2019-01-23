@@ -40,8 +40,8 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/open-sans-v15-latin-ext_cyrillic-ext_latin_cyrillic-300.woff2') format('woff2'),
-       url('/fonts/open-sans-v15-latin-ext_cyrillic-ext_latin_cyrillic-300.woff') format('woff');
+  src: url('../fonts/open-sans-v15-latin_latin-ext_cyrillic-ext_cyrillic-300.woff2') format('woff2'),
+       url('../fonts/open-sans-v15-latin_latin-ext_cyrillic-ext_cyrillic-300.woff') format('woff');
 }
 
 @font-face {
@@ -49,8 +49,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/open-sans-v15-latin-ext_cyrillic_latin_cyrillic-ext-regular.woff2') format('woff2'),
-       url('/fonts/open-sans-v15-latin-ext_cyrillic_latin_cyrillic-ext-regular.woff') format('woff');
+  src: url('../fonts/open-sans-v15-latin_latin-ext_cyrillic-ext_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/open-sans-v15-latin_latin-ext_cyrillic-ext_cyrillic-regular.woff') format('woff');
 }
 
 @font-face {
@@ -58,18 +58,17 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/open-sans-v15-latin-ext_cyrillic_latin_cyrillic-ext-600.woff2') format('woff2'),
-       url('/fonts/open-sans-v15-latin-ext_cyrillic_latin_cyrillic-ext-600.woff') format('woff');
+  src: url('../fonts/open-sans-v15-latin_latin-ext_cyrillic-ext_cyrillic-600.woff2') format('woff2'),
+       url('../fonts/open-sans-v15-latin_latin-ext_cyrillic-ext_cyrillic-600.woff') format('woff');
 }
-
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/roboto-v18-latin-ext_cyrillic-ext_latin_cyrillic-300.woff2') format('woff2'),
-       url('/fonts/roboto-v18-latin-ext_cyrillic-ext_latin_cyrillic-300.woff') format('woff');
+  src: url('/fonts/roboto-v18-latin_latin-ext_cyrillic-ext_cyrillic-300.woff2') format('woff2'),
+       url('/fonts/roboto-v18-latin_latin-ext_cyrillic-ext_cyrillic-300.woff') format('woff');
 }
 
 @font-face {
@@ -77,6 +76,15 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/roboto-v18-latin-ext_cyrillic-ext_latin_cyrillic-regular.woff2') format('woff2'),
-       url('/fonts/roboto-v18-latin-ext_cyrillic-ext_latin_cyrillic-regular.woff') format('woff');
+  src: url('/fonts/roboto-v18-latin_latin-ext_cyrillic-ext_cyrillic-regular.woff2') format('woff2'),
+       url('/fonts/roboto-v18-latin_latin-ext_cyrillic-ext_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/roboto-v18-latin_latin-ext_cyrillic-ext_cyrillic-500.woff2') format('woff2'),
+       url('/fonts/roboto-v18-latin_latin-ext_cyrillic-ext_cyrillic-500.woff') format('woff');
 }

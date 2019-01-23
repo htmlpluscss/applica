@@ -37,6 +37,17 @@
 	letter-spacing: 1px;
 	text-transform: uppercase;
 
+	@media ($smWidth) {
+
+		height: 50px;
+		line-height: 50px;
+		padding: 0 20px;
+		font-size: 12px;
+		font-weight: bold;
+		letter-spacing: 0.8px;
+
+	}
+
 	&--arrow {
 
 		padding-right: 65px;
@@ -47,6 +58,12 @@
 			top: 28px;
 			right: 28px;
 			stroke: #fff;
+
+			@media ($smWidth) {
+
+				display: none;
+
+			}
 
 		}
 
@@ -155,9 +172,28 @@
 	width: 476px;
 	position: relative;
 
+	@media ($mdWidth) {
+
+		width: 100%;
+
+	}
+
 	.btn {
 
 		margin-top: 60px;
+
+		@media ($smWidth) {
+
+			width: 100%;
+			margin-top: 40px;
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 0.9px;
+			line-height: 60px;
+			height: 60px;
+			border-radius: 6px;
+
+		}
 
 	}
 
@@ -195,6 +231,12 @@
 	margin-bottom: 4px;
 	position: relative;
 
+	@media ($mdWidth) {
+
+		margin-bottom: 3px;
+
+	}
+
 	&__label {
 
 		width: 116px;
@@ -204,6 +246,13 @@
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
+
+		@media ($mdWidth) {
+
+			font-size: 13px;
+			width: 100px;
+
+		}
 
 	}
 
@@ -240,6 +289,12 @@
 			font-weight: 300;
 			line-height: 16px;
 			color: var(--red);
+
+			@media ($mdWidth) {
+
+				left: 100px;
+
+			}
 
 		}
 

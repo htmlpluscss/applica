@@ -2,9 +2,21 @@
 
 	margin: 20px -3px;
 
+	@media ($mdWidth) {
+
+		margin: 38px 0 34px;
+
+	}
+
 	&__item {
 
 		margin: 22px 0;
+
+		@media ($mdWidth) {
+
+			margin: 20px 0;
+
+		}
 
 	}
 

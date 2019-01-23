@@ -61,6 +61,19 @@
 
 	}
 
+	.center {
+
+		width: 680px;
+
+	}
+
+	.main {
+
+		padding-left: 20px;
+		padding-right: 20px;
+
+	}
+
 }
 
 @media ($xsWidth) {
