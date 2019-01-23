@@ -1,12 +1,12 @@
 	<aside class="list-article">
 
-		<div class="center">
+		<div class="center{% if list.length == 3 %} swiper-container swiper-container--md{% endif %}">
 
-			<ul class="list-article__box">
+			<ul class="list-article__box{% if list.length == 3 %} swiper-wrapper{% endif %}">
 
 {% for item in list %}
 
-				<li class="list-article__item">
+				<li class="list-article__item{% if list.length == 3 %} swiper-slide{% endif %}">
 
 					<a href="/blog/{{ item.link }}.html" class="list-article__link">
 

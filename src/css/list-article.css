@@ -16,6 +16,24 @@
 		margin-left: -20px;
 		margin-right: -20px;
 
+		.swiper-container {
+
+			margin-left: -10px;
+			margin-right: -10px;
+			width: auto;
+			max-width: none;
+			padding-bottom: 5px;
+			padding-top: 20px;
+
+			&::after,
+			&::before {
+
+				width: 10px;
+
+			}
+
+		}
+
 	}
 
 	&__box {
@@ -30,12 +48,43 @@
 			margin-left: -14px;
 			margin-right: -14px;
 
+			&.swiper-wrapper {
+
+				flex-wrap: nowrap;
+				margin: 0;
+				display: flex !important;
+
+				.swiper-slide {
+
+					margin: 0;
+
+					.list-article__link {
+
+						width: 90%;
+						margin: auto;
+
+					}
+
+				}
+
+			}
+
 		}
 
 		@media ($smWidth) {
 
 			margin: 0;
 			display: block;
+
+			&.swiper-wrapper {
+
+				.list-article__link {
+
+					width: calc(100% - 20px) !important;
+
+				}
+
+			}
 
 		}
 
