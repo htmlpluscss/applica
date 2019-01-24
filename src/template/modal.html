@@ -1,52 +1,93 @@
 	<div class="modal hidden-visible">
 
-		<div class="modal__item modal__item--request hidden-visible">
+		<div class="modal__box">
 
-			<form action="/mail.php" class="form" novalidate="novalidate" autocomplete="off" data-ok="Спасибо. В ближайшее время с вами свяжется наш менеджер.">
+			<div class="modal__item modal__item--request hidden-visible">
 
-				<input name="subject" type="hidden" value="Send a request">
+				<form action="/mail.php" class="form" novalidate="novalidate" autocomplete="off" data-ok="Спасибо. В ближайшее время с вами свяжется наш менеджер.">
 
-				<div class="form__box">
+					<input name="subject" type="hidden" value="Send a request">
 
-					<h3 class="h1">Send a request</h3>
+					<div class="form__box">
 
-					<div class="input-box">
-						<label class="input-box__label" for="modal-name">
-							Name
-						</label>
-						<input name="name" class="input" id="modal-name">
+						<h3 class="h1">Send a request</h3>
+
+						<div class="input-box">
+							<label class="input-box__label" for="modal-name">
+								Name
+							</label>
+							<input name="name" class="input" id="modal-name" required="required">
+						</div>
+
+						<div class="input-box" data-error="Fill in all fields correctly">
+							<label class="input-box__label" for="modal-phone">
+								Telephone
+							</label>
+							<input name="phone" class="input input--error" type="tel" id="modal-phone" required="required">
+						</div>
+
+						<div class="input-box">
+							<label class="input-box__label" for="modal-message">
+								Message
+							</label>
+							<textarea name="message" class="input" id="modal-message" required="required"></textarea>
+						</div>
+
+						<button class="btn btn--arrow">
+							Send
+							<svg width="19" height="13" viewBox="0 0 19 13">
+								<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
+									<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
+									<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
+								</g>
+							</svg>
+						</button>
+
 					</div>
 
-					<div class="input-box" data-error="Fill in all fields correctly">
-						<label class="input-box__label" for="modal-phone">
-							Telephone
-						</label>
-						<input name="phone" class="input input--error" type="tel" id="modal-phone">
+				</form>
+
+			</div>
+
+			<div class="modal__item modal__item--menu hidden-visible">
+
+				<div class="modal-menu">
+
+					<div class="modal-menu__lang">
+
+						<div class="lang lang--white lang--{{ lang | default('en') }}">
+
+							<a href="/ru">RUS</a>
+							<a href="/">ENG</a>
+
+						</div>
+
 					</div>
 
-					<div class="input-box">
-						<label class="input-box__label" for="modal-message">
-							Message
-						</label>
-						<textarea name="message" class="input" id="modal-message"></textarea>
-					</div>
+{% set subBgOff = true %}
 
-					<button class="btn btn--arrow">
-						Send
-						<svg width="19" height="13" viewBox="0 0 19 13">
-							<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
-								<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
-								<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
-							</g>
-						</svg>
-					</button>
+{% include "template/menu.html" %}
+
+					<div class="modal-menu__btn">
+
+						<button type="button" class="btn btn--arrow" data-modal="request">
+							Get started
+							<svg width="19" height="13" viewBox="0 0 19 13">
+								<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(1.5 .5)">
+									<path d="M0 6L16 6M16 6L10.9377422.937742233"/>
+									<path d="M16,11 L10.9377422,5.93774223" transform="matrix(1 0 0 -1 0 16.938)"/>
+								</g>
+							</svg>
+						</button>
+
+					</div>
 
 				</div>
 
-			</form>
+			</div>
+
+			<button type="button" class="modal__close modal__close-btn button">Закрыть</button>
 
 		</div>
-
-		<button type="button" class="modal__close modal__close-btn button">Закрыть</button>
 
 	</div>

@@ -1,29 +1,19 @@
 
-(function(btn){
+(function(menu){
 
-	btn.addEventListener('click', function () {
+	Array.prototype.forEach.call(menu.querySelectorAll('.menu__item--parent'), function(el){
 
-		if(APPLICA.OpenMenu) {
+		var a = el.firstElementChild,
+			sub = el.querySelector('.menu__sub');
 
-			APPLICA.body.classList.remove('menu-show');
+		a.addEventListener('click', function (e) {
 
-			window.scrollTo(0,APPLICA.windowScrollOld);
+			e.preventDefault();
 
-			APPLICA.OpenMenu = false;
+			sub.classList.toggle('menu__sub--open');
 
-		}
-		else {
-
-			APPLICA.OpenMenu = true;
-
-			// записываем значение скролла страницы
-			APPLICA.windowScrollOld = window.pageYOffset;
-			window.scrollTo(0,0);
-
-			APPLICA.body.classList.add('menu-show');
-
-		}
+		});
 
 	});
 
-})(document.querySelector('.header__btn-menu-toggle'));
+})(document.querySelector('.modal-menu .menu'));

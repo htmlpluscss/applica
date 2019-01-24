@@ -4,14 +4,36 @@
 	position: relative;
 	-webkit-overflow-scrolling: touch;
 	display: flex;
-	background-color: var(--bg);
 	z-index: 10;
-	color: #fff;
-	padding: 60px;
 
-	@media ($smWidth) {
+	&--menu	&__box {
 
-		padding: 20px;
+		max-width: 310px;
+		margin-left: auto;
+		overflow: hidden;
+		padding: 27px 20px 40px 40px;
+
+		@media ($xsWidth) {
+
+			max-width: 100%;
+
+		}
+
+	}
+
+	&__box {
+
+		flex-grow: 1;
+		display: flex;
+		background-color: var(--bg);
+		color: #fff;
+		padding: 60px;
+
+		@media ($smWidth) {
+
+			padding: 20px;
+
+		}
 
 	}
 
@@ -45,8 +67,8 @@
 
 		@media ($smWidth) {
 
-			top: 10px;
-			right: 10px;
+			top: 17px;
+			right: 17px;
 
 		}
 
@@ -125,6 +147,50 @@
 		right: 0;
 		bottom: 0;
 		overflow: hidden;
+		opacity: .29;
+
+	}
+
+}
+
+.modal-menu {
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	&__lang {
+
+		position: relative;
+
+	}
+
+	.menu {
+
+		margin: 58px 0;
+
+	}
+
+	&__btn {
+
+		margin-top: auto;
+
+		.btn {
+
+			border-radius: 6px !important;
+			height: 70px !important;
+			line-height: 70px !important;
+			padding: 0 65px 0 30px !important;
+			font-size: 15px !important;
+			letter-spacing: 1px !important;
+
+			svg {
+
+				display: block !important;
+
+			}
+
+		}
 
 	}
 

@@ -47,18 +47,12 @@
 
 		});
 
+		modal.classList.toggle('modal--menu', selector == "menu");
+
 		modal.classList.remove('hidden-visible');
 
 		APPLICA.body.classList.add('modal-show');
 		window.scrollTo(0,0);
-
-		// close menu
-		if(APPLICA.OpenMenu){
-
-			document.body.classList.remove('menu-show');
-			APPLICA.OpenMenu = false;
-
-		}
 
 		APPLICA.activeModal.focus();
 

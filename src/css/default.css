@@ -31,11 +31,10 @@ body {
 	flex-grow: 1;
 	flex-direction: column;
 	overflow-y: scroll;
-
-/* background-image: url(/css/index-360.png);
+/*
+background-image: url(/css/menu-360.png);
 	 	background-size: 360px auto;
-		width: 360px;
-	 */
+		width: 360px; */
 	/* IE10+ CSS styles go here */
 	@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
 

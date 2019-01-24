@@ -1,0 +1,110 @@
+				<ul class="menu">
+
+{% set menuClassLi = "menu__item" %}
+
+{% set menu = [
+	{
+		title: "Portfolio",
+		link: "products"
+	},
+	{
+		subMenuBegin: true,
+		title: "Services",
+		link: "service"
+	},
+		{
+			title: "Audit and system engineering",
+			link: "engineering"
+		},
+		{
+			title: "Interface design",
+			link: "design"
+		},
+		{
+			title: "iOS applications development",
+			link: "ios"
+		},
+		{
+			title: "Android applications development",
+			link: "android"
+		},
+		{
+			title: "Application Support",
+			link: "support"
+		},
+		{
+			title: "Website development and support",
+			link: "website"
+		},
+	{
+		subMenuEnd: true,
+		title: "Blog",
+		link: "blog"
+	},
+	{
+		title: "About Us",
+		link: "about"
+	},
+	{
+		title: "Contacts",
+		link: "contacts"
+	}
+] %}
+
+{% for item in menu %}
+
+					{% if item.subMenuEnd %}
+
+							</ul>
+
+						</div>
+
+{% if not subBgOff %}
+
+						<span class="menu__sub-bg menu__sub-tl"></span>
+						<span class="menu__sub-bg menu__sub-t"></span>
+						<span class="menu__sub-bg menu__sub-rc"></span>
+
+{% endif %}
+
+{% set menuClassLi = "menu__item" %}
+
+					{% endif %}
+
+					<li class="{{ menuClassLi }}{% if item.subMenuBegin %} menu__item--parent{% endif %}">
+
+						<a  href="/{{item.link}}">
+							<span>{{ item.title }}</span>
+						</a>
+
+						{% if item.subMenuBegin %}
+
+{% set menuClassLi = "menu__sub-item" %}
+
+						<div class="menu__sub">
+
+{% if not subBgOff %}
+
+							<span class="menu__sub-bg menu__sub-tc"></span>
+							<span class="menu__sub-bg menu__sub-tr"></span>
+							<span class="menu__sub-bg menu__sub-r"></span>
+							<span class="menu__sub-bg menu__sub-br"></span>
+							<span class="menu__sub-bg menu__sub-bc"></span>
+							<span class="menu__sub-bg menu__sub-bl"></span>
+							<span class="menu__sub-bg menu__sub-l"></span>
+
+{% endif %}
+
+							<ul class="menu__sub-list">
+
+						{% endif %}
+
+					{% if not item.subMenuBegin %}
+
+					</li>
+
+					{% endif %}
+
+{% endfor %}
+
+				</ul>
