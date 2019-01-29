@@ -43,4 +43,46 @@ var APPLICA = {};
 		);
 	}
 
+// cursor
+	var cursor = document.querySelector('.js-cursor'),
+		pageCoordCursor = [0,0];
+
+	window.addEventListener("mousemove", function(e){
+
+		if(pageCoordCursor[0]==0){
+
+			TweenMax.set(cursor, {
+				x: e.clientX-6,
+				y: e.clientY-6
+			});
+
+			TweenMax.to(cursor, 1, {
+				ease: Expo.easeOut,
+				opacity: 1
+			});
+
+		}
+
+		pageCoordCursor[0] = e.clientX;
+		pageCoordCursor[1] = e.clientY;
+
+		// курсок кружок
+		var size = e.target.closest('a') || e.target.closest('button') ? 36 : 12;
+
+		TweenMax.to(cursor, 1, {
+			width: size,
+			height: size,
+			x: pageCoordCursor[0]-(size/2),
+			y: pageCoordCursor[1]-(size/2),
+			ease: Expo.easeOut
+		});
+
+	});
+
+	if (typeof window.CustomEvent === 'function') {
+
+	//	window.dispatchEvent(new Event('mousemove'));
+
+	}
+
 })();

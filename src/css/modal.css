@@ -139,6 +139,8 @@
 
 .modal-show {
 
+	background-color: var(--bg);
+
 	.wrapper {
 
 		position: absolute;
