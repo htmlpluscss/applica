@@ -1,0 +1,49 @@
+{% set title = "Spotify App for macOS Mojave Sketch Resource" %}
+
+{% set description = "Private police are law enforcement bodies that are owned and/or controlled by non-governmental entities. Additionally, the term can refer to an off-duty police officer while working for a private entity, providing security, or otherwise law enforcement-related services." %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "_include/breadcrumbs.html" %}
+
+	<article class="article">
+
+		<div class="center">
+
+			<header class="article__header">
+
+				<h1 class="h1 article__center">
+					{{ title }}
+				</h1>
+
+				<p class="article__center">
+					{{ description }}
+				</p>
+
+			</header>
+
+			<div class="article__body article__center">
+
+				<p>
+					Private security firms in the U.S. employ more security guards, patrol personnel and detectives than the U.S. federal, state and local governments combined, fulfilling many of the beat-patrol functions once thought central to the mission of public police. It has been argued that the private police market furnishes tangible evidence about what people want but are not receiving from public police. The growth of private policing is a phenomenon that is occurring all over the world. In Australia, private and public police have conventionally been considered parallel systems, with private security as very much the lesser or junior entity.
+				</p>
+
+				<p>
+					Private police typically focus on loss instead of crime; preventive methods rather than punishment; private justice (such as firing embezzlers or issuing no trespassing warnings to shoplifters) rather than public court proceedings; and private property rather than public property. With the exception of North Carolina, private police lack the same arrest powers of government law enforcement, but do have the right to make a citizen's arrest if they actually witness a crime happening.
+				</p>
+
+				<p>
+					In North Carolina, private police are certified company police agencies governed by the North Carolina Department of Justice chapter 74E of the Company Police Act.
+				</p>
+
+			</div>
+
+		</div>
+
+	</article>
+
+{% include "_include/request.html" %}
+
+{% endblock %}

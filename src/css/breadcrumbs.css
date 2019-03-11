@@ -1,0 +1,39 @@
+.breadcrumbs {
+
+	display: flex;
+	justify-content: center;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 28px;
+
+	&__item + &__item::before {
+
+		content: '—';
+		font-size: 11px;
+		position: relative;
+		top: -2px;
+		padding: 0 3px 0 6px;
+
+	}
+
+	&__link {
+
+		color: var(--red);
+		border-bottom: 1px solid color(#f1303e a(35%));
+
+		&:hover {
+
+			border-bottom: 1px solid;
+
+		}
+
+	}
+
+	&__text {
+
+		color: #6b6b6b;
+
+	}
+
+}

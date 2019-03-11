@@ -56,6 +56,13 @@
 
 		}
 
+		&--center {
+
+			margin: auto !important;
+			display: block;
+
+		}
+
 	}
 
 	&__btn-menu-toggle {
