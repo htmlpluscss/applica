@@ -1,0 +1,292 @@
+{% set title = "About us" %}
+
+{% set description = "Работая над проектом, мы становимся частью вашей команды" %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<article>
+
+		<div class="about-top">
+
+			<div class="center">
+
+				<h1 class="h1">
+					{{ title }}
+				</h1>
+
+				<p>
+					<strong>
+						Устали искать подрядчика для разработки сайта?
+					</strong>
+				</p>
+
+				<p>
+					У одних лучше админка, у других — дизайн хороший, с третьими работал ваш знакомый. А еще нашелся фрилансер. Он утверждает, что сделает все то же самое, но в два раза дешевле.
+				</p>
+
+				<div class="about-top__pdf">
+
+					<a href="/" target="_blank">
+						Презентация Applica UA
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="about-top__img">
+
+				<picture>
+
+					<source srcset="/img/about/top--360@1x.webp 1x, /img/about/top--360@2x.webp 2x" media="(max-width: 767px)" type="image/webp">
+					<source srcset="/img/about/top@1x.webp 1x, /img/about/top@2x.webp 2x" type="image/webp">
+
+					<source srcset="/img/about/top--360@1x.png 1x, /img/about/top--360@2x.png 2x" media="(max-width: 767px)">
+					<source srcset="/img/about/top@1x.png 1x, /img/about/top@2x.png 2x">
+
+					<img src="/img/about/top@1x.png" alt="">
+
+				</picture>
+
+			</div>
+
+		</div>
+
+		<div class="center">
+
+			<div class="about-error">
+
+				<h2 class="h3">
+					Как не ошибиться и найти оптимальное решение?
+				</h2>
+
+				<ul>
+					<li>
+						<strong>
+							Другие сказали бы
+						</strong>
+						Конечно, выберите нас! <span class="br"></span>Мы лучшие: у нас 50 лет опыта <span class="br"></span>и самые крутые в мире специалисты!
+					</li>
+					<li>
+						<strong>
+							Но не мы
+						</strong>
+						Мы не лучше и не хуже других. <br>Если пропустить всю болтовню, мы просто делаем свою работу добросовестно. Искренне переживаем за ваше дело и стараемся помочь
+					</li>
+				</ul>
+
+			</div>
+
+			<hr class="about-hr">
+
+			<div class="about-price">
+
+				<h2 class="h3">
+					Вопрос цены. Как понять сколько стоят сайты?
+				</h2>
+
+				<p>
+					Практически, ни у кого нет цен на сайте. Зачастую стоимость проекта оценивают исходя из клиента, а не из задачи. Понятного механизма ценообразования нет.
+				</p>
+
+				<p>
+					А еще, в большинстве случаев, озвученная цена не совпадает с тем, что вы платите по итогу. Всегда всплывают какие-то дополнительные сложности, пожелания, правки и так далее.
+				</p>
+
+				<div class="about-price__request">
+
+					<button class="button" type="button" data-modal="request">
+						Расскажите о своем проекте
+					</button>
+
+				</div>
+
+			</div>
+
+			<div class="about-table">
+
+				<h3 class="h4">
+					Ценовая политика
+				</h3>
+
+				<table>
+					<tr>
+						<th>Дизайн</th>
+						<th>Приложение</th>
+						<th>Сайт</th>
+						<th>Поддержка</th>
+					</tr>
+					<tr>
+						<td>от $2 000</td>
+						<td>от $5 000</td>
+						<td>от $4 000</td>
+						<td>от $700/м<span class="hidden-md">ес</span>.</td>
+					</tr>
+				</table>
+
+			</div>
+
+			<div class="about-price about-price--2">
+
+				<h2 class="h3">
+					Работая над проектом, мы становимся частью вашей команды
+				</h2>
+
+				<p>
+					Earlier this year (January 2018). I started to think about how I could improve my design skills and attract more customers. I wanted to start designing some ideas that for a long time I had only on paper and stored on my cell phone, I decided to look for some challenge, something that makes more sense with what I thought. I saw that many designers (especially in dribbble) made a daily user interface, I really liked the idea, but the problem was that the result was just something nice and did not solve any problem.
+				</p>
+
+				<p>
+					I didn't want to just draw something nice; I wanted to create real solutions to real problems, develop designs that make sense and inspire others to come up with more ideas. And so I settled on making my own personal challenge with the goal of not only improving and showing off my design skills.
+				</p>
+
+				<div class="about-price__social">
+
+					<h3 class="h4">
+						Следите за нами в социальных сетях
+					</h3>
+
+					<ul>
+						<li>
+							<a class="about-price__social-vk" href="/" target="_blank" rel="nofollow">
+								<svg width="23" height="12" viewBox="0 0 23 12">
+									<path d="M11.253 11.95h1.375s.415-.042.627-.251c.196-.192.19-.552.19-.552s-.028-1.687.828-1.936c.845-.245 1.928 1.63 3.077 2.352.869.545 1.529.426 1.529.426l3.071-.04s1.607-.09.845-1.245c-.062-.095-.444-.855-2.284-2.417-1.926-1.635-1.668-1.37.652-4.198 1.413-1.722 1.978-2.774 1.801-3.224C22.796.436 21.757.55 21.757.55l-3.458.02s-.257-.032-.447.072c-.186.102-.305.34-.305.34s-.548 1.332-1.277 2.465c-1.54 2.392-2.156 2.518-2.408 2.37-.586-.346-.44-1.39-.44-2.132 0-2.318.385-3.284-.748-3.535-.376-.083-.653-.137-1.614-.146C9.826-.01 8.782.006 8.19.27c-.393.176-.697.569-.512.591.229.028.746.128 1.02.47.355.44.343 1.43.343 1.43s.204 2.73-.476 3.068c-.466.232-1.105-.242-2.478-2.412a19.459 19.459 0 0 1-1.235-2.34S4.75.848 4.567.726C4.346.577 4.037.53 4.037.53L.75.55S.256.561.075.757c-.161.175-.013.536-.013.536s2.573 5.505 5.486 8.279c2.672 2.544 5.705 2.377 5.705 2.377"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="about-price__social-fb" href="/" target="_blank" rel="nofollow">
+								<svg width="10" height="18" viewBox="0 0 10 18">
+									<path d="M9.623.004L7.225 0C4.53 0 2.789 1.739 2.789 4.43v2.042H.377A.372.372 0 0 0 0 6.84V9.8c0 .203.169.367.377.367H2.79v7.467c0 .203.169.367.377.367h3.146a.372.372 0 0 0 .378-.367v-7.467h2.82a.372.372 0 0 0 .376-.367l.002-2.96c0-.097-.04-.19-.11-.26a.383.383 0 0 0-.268-.107H6.69V4.741c0-.832.203-1.255 1.317-1.255h1.616A.372.372 0 0 0 10 3.119V.37a.372.372 0 0 0-.377-.367z"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="about-price__social-tw" href="/" target="_blank" rel="nofollow">
+								<svg width="21" height="17" viewBox="0 0 21 17">
+									<defs>
+										<linearGradient id="about-price__social-tw" x1="65.97%" x2="85.12%" y1="43.69%" y2="80.24%">
+										<stop offset="0%" stop-color="#EFF7FC"/>
+										<stop offset="100%" stop-color="#FFF"/>
+										</linearGradient>
+									</defs>
+									<g fill="none" fill-rule="evenodd">
+										<path fill="#B1C9DF" d="M7.727 15.918c-.6 0-.498-.227-.706-.799L5.255 9.305l13.6-8.069"/>
+										<path fill="#8DB4CC" d="M7.727 15.918c.464 0 .669-.212.928-.463l2.472-2.405-3.084-1.86"/>
+										<path fill="url(#about-price__social-tw)" d="M8.043 11.19l7.473 5.522c.853.471 1.469.227 1.681-.791L20.24 1.584C20.551.336 19.763-.23 18.948.14L1.084 7.028c-1.22.49-1.213 1.17-.223 1.473l4.585 1.43 10.613-6.695c.5-.304.96-.14.583.194"/>
+									</g>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="about-price__social-ig" href="/" target="_blank" rel="nofollow">
+								<svg width="20" height="20" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M5 0h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5zm10 6.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zm-5 6.25a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 1.5a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<hr class="about-hr">
+
+			<div class="about-team">
+
+				<h2 class="h3">
+					Team Applica UA
+				</h2>
+
+				<div class="swiper-container swiper-container--md">
+
+					<ul class="about-team__list swiper-wrapper">
+
+						<li class="about-team__item swiper-slide">
+
+							<div class="about-team__user">
+
+								<picture>
+
+									<source srcset="/img/team/top@1x.webp 1x, /img/team/top@2x.webp 2x" type="image/webp">
+
+									<source srcset="/img/team/top@1x.png 1x, /img/team/top@2x.png 2x">
+
+									<img src="/img/team/top@1x.png" alt="" style="display: block; width: 350px; height: 310px; background-color: #f3f3f3;">
+
+								</picture>
+
+								<strong class="about-team__name h4">
+									Tim Kamerer
+								</strong>
+
+								Art Director
+
+							</div>
+
+						</li>
+
+						<li class="about-team__item swiper-slide">
+
+							<div class="about-team__user">
+
+								<picture>
+
+									<source srcset="/img/team/top@1x.webp 1x, /img/team/top@2x.webp 2x" type="image/webp">
+
+									<source srcset="/img/team/top@1x.png 1x, /img/team/top@2x.png 2x">
+
+									<img src="/img/team/top@1x.png" alt="" style="display: block; width: 350px; height: 310px; background-color: #f3f3f3;">
+
+								</picture>
+
+								<strong class="about-team__name h4">
+									Tim Kamerer
+								</strong>
+
+								Art Director
+
+							</div>
+
+						</li>
+
+						<li class="about-team__item swiper-slide">
+
+							<div class="about-team__user">
+
+								<picture>
+
+									<source srcset="/img/team/top@1x.webp 1x, /img/team/top@2x.webp 2x" type="image/webp">
+
+									<source srcset="/img/team/top@1x.png 1x, /img/team/top@2x.png 2x">
+
+									<img src="/img/team/top@1x.png" alt="" style="display: block; width: 350px; height: 310px; background-color: #f3f3f3;">
+
+								</picture>
+
+								<strong class="about-team__name h4">
+									Tim Kamerer
+								</strong>
+
+								Art Director
+
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</article>
+
+{% include "_include/request.html" %}
+
+{% endblock %}
