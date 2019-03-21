@@ -9,11 +9,15 @@
 
 	&__item + &__item::before {
 
-		content: '—';
-		font-size: 11px;
+		content: '';
 		position: relative;
-		top: -2px;
-		padding: 0 3px 0 6px;
+		width: 4px;
+		height: 4px;
+		display: inline-block;
+		vertical-align: middle;
+		border-radius: 50%;
+		margin: 0 12px;
+		background-color: var(--color);
 
 	}
 

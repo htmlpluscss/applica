@@ -1,0 +1,193 @@
+{% set title = "Portfolio" %}
+
+{% set description = "Design & Dev projects completed in 4 years work" %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "_include/breadcrumbs.html" %}
+
+	<article class="center">
+
+		<div class="portfolio">
+
+			<h1 class="h1">
+				{{ title }}
+			</h1>
+
+{% set list = [
+	{
+		title: "AznToday",
+		link: "",
+		img: "azn",
+		bg: "dark-violet",
+		text: "Current information on the exchange rate of Azerbaijan <span class=\"br\"></span>in your pocket",
+		appStore : true
+	},
+	{
+		title: "Horoscope",
+		link: "",
+		img: "horoscope",
+		bg: "dark-blue",
+		text: "Unique application that <span class=\"br\"></span>allows you to know your <span class=\"br\"></span>destiny right now",
+		appStore : true
+	},
+	{
+		title: "Fitscope",
+		link: "",
+		bg: "dark-orange",
+		text: "Fitscope connects you to talented health, fitness experts. Join Fitscope today",
+		appStore : true
+	},
+	{
+		title: "Universal Logistic",
+		link: "",
+		bg: "blue",
+		text: "Transportation and logistics services in the Republic of&nbsp;Kazakhstan",
+		appStore : true,
+		googlePlay: true
+	},
+	{
+		title: "Kids Club",
+		link: "",
+		bg: "red",
+		text: "Mobile application for customers of the Champion Kids&nbsp;Сlub",
+		appStore : true,
+		googlePlay: true
+	},
+	{
+		title: "Armenian MTV",
+		link: "",
+		img: "mtv",
+		bg: "cherry",
+		text: "Round-the-clock broadcasts <span class=\"br\"></span>of popular Armenian videos <span class=\"br\"></span>in HD format",
+		platform: "googlePlay"
+	},
+	{
+		title: "World Cup 2018",
+		link: "",
+		img: "word-cup-2018",
+		bg: "green",
+		text: "This app provides you with information about the 2018 FIFA&nbsp;World&nbsp;Cup",
+		appStore : true
+	},
+	{
+		title: "Fermer Green",
+		link: "",
+		img: "fermer",
+		bg: "dark",
+		text: "Delicious and fresh products from farmers with home <span class=\"br\"></span>delivery",
+		appStore : true
+	},
+	{
+		title: "Beauty saloon",
+		link: "",
+		img: "fermer",
+		bg: "violet",
+		text: "Mobile application for clients <span class=\"br\"></span>of the Beauty and Health Center&nbsp;\"Esthetic\"",
+		appStore : true
+	}
+] %}
+
+			<ul class="portfolio__list">
+
+{% for item in list %}
+
+				<li class="portfolio__item portfolio__item--{{ item.bg }}{% if item.img %} portfolio__item--img{% endif %}">
+
+					<a href="{{ item.link }}" class="portfolio__link">
+
+						<h2 class="h3">
+							{{ item.title }}
+						</h2>
+
+						<p>
+							{{ item.text | safe }}
+						</p>
+
+						<span class="portfolio__cat">
+							Release for
+						</span>
+
+						<span class="portfolio__platform">
+
+							{% if item.appStore %}
+
+							<span class="portfolio__platform-item">
+
+								<svg width="16" height="20" viewBox="0 0 16 20">
+									<path d="M9.073 1.64C9.784.726 10.987.046 11.979 0c.127 1.27-.339 2.542-1.028 3.459-.69.915-1.818 1.628-2.926 1.532-.15-1.242.407-2.538 1.048-3.35zm5.566 15.906c-.82 1.205-1.668 2.402-3.007 2.427-1.317.025-1.74-.784-3.243-.784-1.505 0-1.976.76-3.22.81-1.292.048-2.275-1.302-3.102-2.501C.38 15.045-.91 10.563.823 7.538c.858-1.502 2.396-2.452 4.063-2.477 1.27-.024 2.468.86 3.244.86.776 0 2.232-1.061 3.762-.905.64.026 2.438.259 3.592 1.957-.091.06-2.145 1.262-2.12 3.764.024 2.99 2.606 3.983 2.636 3.997-.024.07-.413 1.419-1.36 2.812z"/>
+								</svg>
+
+								App Store
+
+							</span>
+
+							{% endif %}
+
+							{% if item.googlePlay %}
+
+							<span class="portfolio__platform-item">
+
+								<svg width="19" height="22" viewBox="0 0 19 22">
+									<path d="M1.5 8C.672 8 0 8.499 0 9.115v4.77C0 14.5.672 15 1.5 15S3 14.5 3 13.884V9.115C3 8.499 2.328 8 1.5 8zm4.705-5H6V1a1 1 0 1 1 2 0v1.191a6.027 6.027 0 0 1 3 0V1a1 1 0 0 1 2 0v2h-.204C14.134 3.91 15 5.356 15 6.989c0 .001-11 .024-11 0C4 5.356 4.867 3.909 6.205 3zM8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm6.5 2c-.828 0-1.5.499-1.5 1.115v4.77C16 14.5 16.672 15 17.5 15c.83 0 1.5-.5 1.5-1.116V9.115C19 8.499 18.328 8 17.5 8zM4 15.634c0 1.052.866 1.904 1.935 1.908v3.342c0 .617.579 1.116 1.293 1.116s1.293-.5 1.293-1.116v-3.342h1.943v3.342c0 .617.58 1.116 1.294 1.116.713 0 1.293-.5 1.293-1.116v-3.342h.008c1.072 0 1.941-.855 1.941-1.908V8H4v7.634z"/>
+								</svg>
+
+								Google Play
+
+							</span>
+
+							{% endif %}
+
+						</span>
+
+{% if item.img %}
+
+						<span class="portfolio__img">
+
+							<picture>
+
+								<source srcset="/img/portfolio/{{ item.img }}@1x.webp 1x, /img/portfolio/{{ item.img }}@2x.webp 2x" type="image/webp">
+
+								<source srcset="/img/portfolio/{{ item.img }}@1x.png 1x, /img/portfolio/{{ item.img }}@2x.png 2x">
+
+								<img src="/img/portfolio/{{ item.img }}@1x.png" alt="{{ item.title }}">
+
+							</picture>
+
+						</span>
+
+{% endif %}
+
+					</a>
+
+				</li>
+
+{% endfor %}
+
+			</ul>
+
+		</div>
+
+		<div class="portfolio__total-result">
+
+			<h2 class="h2">
+				<span>160</span> Design & Dev projects
+			</h2>
+
+			<p>
+				<strong>completed in 4 years work</strong>
+			</p>
+
+			<p>
+				People come to us when you need to create a great looking, thoughtful and result-based website. Our trick is to create conceptual, commercially-oriented projects that we bring to life through interactive development.
+			</p>
+
+		</div>
+
+	</article>
+
+{% include "_include/request.html" %}
+
+{% endblock %}
