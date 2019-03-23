@@ -105,3 +105,50 @@
 }
 
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	fill: #656565;
+	z-index: 2;
+	width: 40px;
+	margin-top: 12px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media ($mdWidth) {
+
+		margin-top: 24px;
+
+	}
+
+	&:hover {
+
+		fill: #fff;
+
+	}
+
+	svg {
+
+		position: relative;
+
+	}
+
+}
+
+.swiper-button-prev {
+
+	margin-left: -50px;
+
+}
+
+.swiper-button-next {
+
+	margin-left: 10px;
+
+}
