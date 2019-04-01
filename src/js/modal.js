@@ -19,12 +19,11 @@
 
 	APPLICA.hideModal = function() {
 
-		modal.classList.add('hidden-visible');
-
 		APPLICA.body.classList.remove('modal-show');
 		wrapper.style.top = 0;
 		window.scrollTo(0,APPLICA.windowScrollOld);
 
+		APPLICA.activeModal.classList.remove('modal__item--active');
 		APPLICA.activeModal = false;
 
 	};
@@ -43,13 +42,11 @@
 
 		Array.prototype.forEach.call(items, function(el){
 
-			el.classList.toggle('hidden-visible', el !== APPLICA.activeModal);
+			el.classList.toggle('modal__item--active', el === APPLICA.activeModal);
 
 		});
 
 		modal.classList.toggle('modal--menu', selector == "menu");
-
-		modal.classList.remove('hidden-visible');
 
 		APPLICA.body.classList.add('modal-show');
 		window.scrollTo(0,0);

@@ -5,6 +5,21 @@
 	-webkit-overflow-scrolling: touch;
 	display: flex;
 	z-index: 10;
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	.modal-show & {
+
+		position: relative;
+		visibility: visible;
+		pointer-events: auto;
+
+	}
 
 	&--menu	&__box {
 
@@ -39,9 +54,38 @@
 
 	&__item {
 
-		position: relative;
 		flex-grow: 1;
 		display: flex;
+		visibility: hidden;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		&--request {
+
+			transform: translateY(-50px);
+			opacity: 0;
+			transition: opacity .5s, transform 1s;
+
+		}
+
+		&--request&--active {
+
+			transform: translateY(0);
+			opacity: 1;
+
+		}
+
+		&--active {
+
+			position: relative;
+			visibility: visible;
+			pointer-events: auto;
+
+		}
 
 	}
 
@@ -123,13 +167,6 @@
 				}
 
 			}
-
-		}
-
-		&--ok {
-
-			margin: auto 0;
-			width: 100%;
 
 		}
 

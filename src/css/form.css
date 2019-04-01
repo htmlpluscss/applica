@@ -200,11 +200,17 @@
 
 		pointer-events: none;
 		opacity: 0;
+		transform: translateY(50px);
+		transition: opacity .5s, transform 1s;
 
 	}
 
-	&--ok::after {
+	&::after {
 
+		opacity: 0;
+		transform: translateY(-50px);
+		transition: opacity .5s, transform 1s;
+		pointer-events: none;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -218,6 +224,14 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+
+	}
+
+	&--ok::after {
+
+		transform: translateY(0);
+		opacity: 1;
+		transition-delay: .5s;
 
 	}
 
