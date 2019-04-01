@@ -31,6 +31,9 @@
 	&__item {
 
 		width: calc(100% / 3);
+		position: relative;
+		color: #fff;
+		padding: 60px;
 
 		&--img {
 
@@ -40,6 +43,8 @@
 
 		@media ($mdWidth) {
 
+			text-align: center;
+			padding: 32px 20px 20px;
 			width: 100% !important;
 
 		}
@@ -110,15 +115,22 @@
 	&__link {
 
 		color: #fff;
-		padding: 60px;
-		display: block;
 
-		@media ($mdWidth) {
+		&:hover {
 
-			width: auto;
-			height: auto;
-			text-align: center;
-			padding: 32px 20px 20px;
+			color: var(--red);
+
+		}
+
+		&::before {
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			z-index: 1;
 
 		}
 
@@ -176,6 +188,8 @@
 	&__platform {
 
 		display: flex;
+		position: relative;
+		z-index: 1;
 
 		@media ($mdWidth) {
 
@@ -196,6 +210,13 @@
 			margin-right: 30px;
 			line-height: 24px;
 			white-space: nowrap;
+			color: #fff;
+
+			&:hover {
+
+				color: var(--red);
+
+			}
 
 			@media ($mdWidth) {
 

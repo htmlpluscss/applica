@@ -46,7 +46,46 @@
 
 		<div class="center">
 
-{% include "_include/home-card.html" %}
+			<div class="portfolio portfolio--home">
+
+{% set portfolio = [
+	{
+		title: "AznToday",
+		link: "",
+		img: "azn",
+		bg: "dark-violet",
+		text: "Current information on the exchange rate of Azerbaijan <span class=\"br\"></span>in your pocket",
+		appStore : true
+	},
+	{
+		title: "Horoscope",
+		link: "",
+		img: "horoscope",
+		bg: "dark-blue",
+		text: "Unique application that <span class=\"br\"></span>allows you to know your <span class=\"br\"></span>destiny right now",
+		appStore : true
+	},
+	{
+		title: "Armenian MTV",
+		link: "",
+		img: "mtv",
+		bg: "cherry",
+		text: "Round-the-clock broadcasts <span class=\"br\"></span>of popular Armenian videos <span class=\"br\"></span>in HD format",
+		platform: "googlePlay"
+	},
+	{
+		title: "World Cup 2018",
+		link: "",
+		img: "word-cup-2018",
+		bg: "green",
+		text: "This app provides you with information about the 2018 FIFA&nbsp;World&nbsp;Cup",
+		appStore : true
+	}
+] %}
+
+{% include "_include/portfolio.html" %}
+
+			</div>
 
 			<div class="home-applications">
 
